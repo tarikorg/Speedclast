@@ -1,0 +1,345 @@
+
+2025/07/10 21:48:45 178351468 1186a064 [DEBUG Client 31168] Generating level 71 area "MapWorldsPlateau" with seed 3446607617
+2025/07/10 21:48:46 178351968 f22b6a02 [INFO Client 31168] Tile hash: 1883184049
+2025/07/10 21:48:46 178351968 f22b6a0d [INFO Client 31168] Doodad hash: 1076807919
+2025/07/10 21:48:46 178351984 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 21:48:46 178351984 e03447a5 [INFO Client 31168] [SCENE] Set Source [Plateau]
+2025/07/10 21:48:46 178352031 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 750 x 900
+2025/07/10 21:48:46 178352078 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 575 x 690
+2025/07/10 21:48:46 178352171 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 21:48:46 178352281 cff945b9 [INFO Client 31168] : You have entered Plateau.
+2025/07/10 21:48:46 178352609 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 21:48:49 178354953 b8f24806 [WARN Client 31168] Could not find skill location memory buff for melee attack action that thinks it should have one
+2025/07/10 21:48:54 178360234 cff945b9 [INFO Client 31168] Vorlena, the Gilded: Know your place!
+2025/07/10 21:49:07 178373265 cff945b9 [INFO Client 31168] Niko, Master of the Depths: Another good find.
+2025/07/10 21:49:12 178378828 cff945b9 [INFO Client 31168] Niko, Master of the Depths: Good find, exile.
+2025/07/10 21:49:13 178379140 cff945b9 [INFO Client 31168] Kryxon, the Precise: Hire me or move on. I charge by the minute. 
+2025/07/10 21:49:30 178396437 cff945b9 [INFO Client 31168] : You have received an Atlas Skill Point.
+2025/07/10 21:49:44 178410218 cff945b9 [INFO Client 31168] Niko, Master of the Depths: Another good find.
+2025/07/10 21:50:36 178462765 88a91042 [DEBUG Client 31168] Got Instance Details from login server
+2025/07/10 21:50:36 178462781 82998930 [INFO Client 31168] [SHADER] Delay: OFF
+2025/07/10 21:50:36 178462781 ca3a6a33 [INFO Client 31168] Connecting to instance server at 64.87.52.111:6112 
+2025/07/10 21:50:36 178462796 ca3a5130 [DEBUG Client 31168] Connect time to instance server was 15ms
+2025/07/10 21:50:36 178462843 1186a0e7 [DEBUG Client 31168] Client-Safe Instance ID = 2661675697
+2025/07/10 21:50:36 178462843 1186a064 [DEBUG Client 31168] Generating level 60 area "HideoutSpace" with seed 1
+2025/07/10 21:50:37 178462843 f22b6a02 [INFO Client 31168] Tile hash: 2718197086
+2025/07/10 21:50:37 178462843 f22b6a0d [INFO Client 31168] Doodad hash: 0
+2025/07/10 21:50:37 178462859 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 21:50:37 178462859 e03447a5 [INFO Client 31168] [SCENE] Set Source [Celestial Nebula Hideout]
+2025/07/10 21:50:37 178462859 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 310 x 310
+2025/07/10 21:50:37 178462859 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 238 x 238
+2025/07/10 21:50:37 178463109 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 21:50:37 178463265 cff945b9 [INFO Client 31168] : You have entered Celestial Nebula Hideout.
+2025/07/10 21:50:37 178463406 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 21:50:55 178481671 88a91042 [DEBUG Client 31168] Got Instance Details from login server
+2025/07/10 21:50:55 178481687 82998930 [INFO Client 31168] [SHADER] Delay: OFF
+2025/07/10 21:50:55 178481687 ca3a6a33 [INFO Client 31168] Connecting to instance server at 64.87.52.225:6112 
+2025/07/10 21:50:55 178481718 ca3a5130 [DEBUG Client 31168] Connect time to instance server was 16ms
+2025/07/10 21:50:55 178481734 1186a0e7 [DEBUG Client 31168] Client-Safe Instance ID = 3010156953
+2025/07/10 21:50:55 178481734 1186a064 [DEBUG Client 31168] Generating level 69 area "MapWorldsChateau" with seed 3479054295
+2025/07/10 21:50:56 178482578 f22b6a02 [INFO Client 31168] Tile hash: 2047529629
+2025/07/10 21:50:56 178482578 f22b6a0d [INFO Client 31168] Doodad hash: 885372313
+2025/07/10 21:50:56 178482625 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 21:50:56 178482625 e03447a5 [INFO Client 31168] [SCENE] Set Source [Chateau]
+2025/07/10 21:50:56 178482625 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 850 x 790
+2025/07/10 21:50:56 178482687 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 652 x 606
+2025/07/10 21:50:56 178482765 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 21:50:57 178482890 cff945b9 [INFO Client 31168] : You have entered Chateau.
+2025/07/10 21:50:57 178483203 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 21:51:00 178486734 b8f24806 [WARN Client 31168] Could not find skill location memory buff for melee attack action that thinks it should have one
+2025/07/10 21:51:10 178496765 cff945b9 [INFO Client 31168] Vorlena, the Gilded: A swift end!
+2025/07/10 21:51:16 178502265 bce2d6b2 [INFO Client 31168] Steam stats stored
+2025/07/10 21:52:23 178569687 cff945b9 [INFO Client 31168] Mac, the Ignoramus: Ah luen! Bororon! Bororon!
+2025/07/10 21:52:29 178575781 cff945b9 [INFO Client 31168] Mac, the Ignoramus: Oh!
+2025/07/10 21:52:30 178576828 cff945b9 [INFO Client 31168] Mac, the Ignoramus: Eh beh!
+2025/07/10 21:53:11 178617625 cff945b9 [INFO Client 31168] : FLUKER_STRIKE (Berserker) is now level 76
+2025/07/10 21:53:22 178628156 cff945b9 [INFO Client 31168] : You have received an Atlas Skill Point.
+2025/07/10 21:54:07 178673421 88a91042 [DEBUG Client 31168] Got Instance Details from login server
+2025/07/10 21:54:07 178673421 82998930 [INFO Client 31168] [SHADER] Delay: OFF
+2025/07/10 21:54:07 178673421 ca3a6a33 [INFO Client 31168] Connecting to instance server at 64.87.52.189:6112 
+2025/07/10 21:54:07 178673453 ca3a5130 [DEBUG Client 31168] Connect time to instance server was 32ms
+2025/07/10 21:54:07 178673484 1186a0e7 [DEBUG Client 31168] Client-Safe Instance ID = 1219030654
+2025/07/10 21:54:07 178673484 1186a064 [DEBUG Client 31168] Generating level 60 area "HideoutSpace" with seed 1
+2025/07/10 21:54:07 178673500 f22b6a02 [INFO Client 31168] Tile hash: 2718197086
+2025/07/10 21:54:07 178673500 f22b6a0d [INFO Client 31168] Doodad hash: 0
+2025/07/10 21:54:07 178673500 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 21:54:07 178673500 e03447a5 [INFO Client 31168] [SCENE] Set Source [Celestial Nebula Hideout]
+2025/07/10 21:54:07 178673500 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 310 x 310
+2025/07/10 21:54:07 178673500 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 238 x 238
+2025/07/10 21:54:07 178673734 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 21:54:08 178673890 cff945b9 [INFO Client 31168] : You have entered Celestial Nebula Hideout.
+2025/07/10 21:54:08 178674140 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 21:54:13 178679812 cff945b9 [INFO Client 31168] : Your Stash Tab with the Unique Affinity does not have enough space for this item.
+2025/07/10 21:54:14 178680312 cff945b9 [INFO Client 31168] : Your Stash Tab with the Unique Affinity does not have enough space for this item.
+2025/07/10 21:54:31 178697296 fb7ae2cc [INFO Client 31168] Successfully allocated passive skill id: sword_damage_and_attack_speed450, name: Sword Damage and Attack Speed
+2025/07/10 21:55:13 178739156 8da7eadc [INFO Client 31168] Successfully allocated passive skill id: atlas_path_14, name: Adjacent Map Drop Chance
+2025/07/10 21:55:15 178741093 42a524a3 [INFO Client 31168] Successfully unallocated passive skill id: atlas_path_14, name: Adjacent Map Drop Chance
+2025/07/10 21:55:18 178744218 8da7eadc [INFO Client 31168] Successfully allocated passive skill id: atlas_path_14, name: Adjacent Map Drop Chance
+2025/07/10 21:55:18 178744781 8da7eadc [INFO Client 31168] Successfully allocated passive skill id: atlas_legion_1_1, name: Legion Monolith Chance
+2025/07/10 21:55:19 178745234 8da7eadc [INFO Client 31168] Successfully allocated passive skill id: atlas_legion_4_9_, name: Legion Monolith Chance
+2025/07/10 21:55:22 178748265 88a91042 [DEBUG Client 31168] Got Instance Details from login server
+2025/07/10 21:55:22 178748281 82998930 [INFO Client 31168] [SHADER] Delay: OFF
+2025/07/10 21:55:22 178748281 ca3a6a33 [INFO Client 31168] Connecting to instance server at 64.87.52.39:6112 
+2025/07/10 21:55:22 178748296 ca3a5130 [DEBUG Client 31168] Connect time to instance server was 15ms
+2025/07/10 21:55:22 178748328 1186a0e7 [DEBUG Client 31168] Client-Safe Instance ID = 3341178301
+2025/07/10 21:55:22 178748328 1186a064 [DEBUG Client 31168] Generating level 72 area "MapWorldsLeyline" with seed 1732368996
+2025/07/10 21:55:23 178748968 f22b6a02 [INFO Client 31168] Tile hash: 1776033757
+2025/07/10 21:55:23 178748968 f22b6a0d [INFO Client 31168] Doodad hash: 2962751850
+2025/07/10 21:55:23 178749000 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 21:55:23 178749000 e03447a5 [INFO Client 31168] [SCENE] Set Source [Leyline]
+2025/07/10 21:55:23 178749015 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 540 x 780
+2025/07/10 21:55:23 178749062 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 414 x 598
+2025/07/10 21:55:23 178749125 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 21:55:23 178749296 cff945b9 [INFO Client 31168] : You have entered Leyline.
+2025/07/10 21:55:23 178749687 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 21:55:28 178754531 cff945b9 [INFO Client 31168] Sister Cassia: Burning away our sins... Burning away our sins... Burning away our sins... Burning away our... 
+2025/07/10 21:55:30 178756078 cff945b9 [INFO Client 31168] Sister Cassia: Oh!
+2025/07/10 21:56:09 178795656 cff945b9 [INFO Client 31168] Vorlena, the Gilded: You are nothing!
+2025/07/10 21:56:10 178796390 cff945b9 [INFO Client 31168] Sister Cassia: It's put out new mycelium! ... New roots!
+2025/07/10 21:56:11 178797015 b8f24806 [WARN Client 31168] Could not find skill location memory buff for melee attack action that thinks it should have one
+2025/07/10 21:56:30 178816390 cff945b9 [INFO Client 31168] Sister Cassia: It's put out new mycelium! ... New roots!
+2025/07/10 21:57:00 178846515 cff945b9 [INFO Client 31168] Sister Cassia: It's branching, exile!
+2025/07/10 21:57:10 178856515 cff945b9 [INFO Client 31168] Sister Cassia: It's put out new mycelium! ... New roots!
+2025/07/10 21:57:30 178876531 cff945b9 [INFO Client 31168] Sister Cassia: The Blight is trying to spread!
+2025/07/10 21:57:38 178884328 cff945b9 [INFO Client 31168] Vorlena, the Gilded: A swift end!
+2025/07/10 21:57:38 178884812 cff945b9 [INFO Client 31168] Sister Cassia: Those fiends are getting too close to my pump.
+2025/07/10 21:57:39 178885203 cff945b9 [INFO Client 31168] : FLUKER_STRIKE has been slain.
+2025/07/10 21:57:39 178885593 cff945b9 [INFO Client 31168] Vorlena, the Gilded: Well. Better you than me.
+2025/07/10 21:57:41 178887312 88a91042 [DEBUG Client 31168] Got Instance Details from login server
+2025/07/10 21:57:41 178887312 82998930 [INFO Client 31168] [SHADER] Delay: OFF
+2025/07/10 21:57:41 178887312 ca3a6a33 [INFO Client 31168] Connecting to instance server at 64.87.52.105:6112 
+2025/07/10 21:57:41 178887343 ca3a5130 [DEBUG Client 31168] Connect time to instance server was 31ms
+2025/07/10 21:57:41 178887375 1186a0e7 [DEBUG Client 31168] Client-Safe Instance ID = 1120664128
+2025/07/10 21:57:41 178887375 1186a064 [DEBUG Client 31168] Generating level 60 area "HideoutSpace" with seed 1
+2025/07/10 21:57:41 178887390 f22b6a02 [INFO Client 31168] Tile hash: 2718197086
+2025/07/10 21:57:41 178887390 f22b6a0d [INFO Client 31168] Doodad hash: 0
+2025/07/10 21:57:41 178887390 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 21:57:41 178887390 e03447a5 [INFO Client 31168] [SCENE] Set Source [Celestial Nebula Hideout]
+2025/07/10 21:57:41 178887406 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 310 x 310
+2025/07/10 21:57:41 178887406 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 238 x 238
+2025/07/10 21:57:41 178887609 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 21:57:41 178887781 cff945b9 [INFO Client 31168] : You have entered Celestial Nebula Hideout.
+2025/07/10 21:57:42 178887937 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 21:58:00 178906500 88a91042 [DEBUG Client 31168] Got Instance Details from login server
+2025/07/10 21:58:00 178906515 82998930 [INFO Client 31168] [SHADER] Delay: OFF
+2025/07/10 21:58:00 178906515 ca3a6a33 [INFO Client 31168] Connecting to instance server at 64.87.52.231:6112 
+2025/07/10 21:58:00 178906546 ca3a5130 [DEBUG Client 31168] Connect time to instance server was 16ms
+2025/07/10 21:58:00 178906562 1186a0e7 [DEBUG Client 31168] Client-Safe Instance ID = 2322730914
+2025/07/10 21:58:00 178906562 1186a064 [DEBUG Client 31168] Generating level 68 area "MapWorldsAlleyways" with seed 2065938917
+2025/07/10 21:58:01 178907125 f22b6a02 [INFO Client 31168] Tile hash: 1843041779
+2025/07/10 21:58:01 178907125 f22b6a0d [INFO Client 31168] Doodad hash: 3107338231
+2025/07/10 21:58:01 178907156 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 21:58:01 178907156 e03447a5 [INFO Client 31168] [SCENE] Set Source [Alleyways]
+2025/07/10 21:58:01 178907171 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 1090 x 670
+2025/07/10 21:58:01 178907250 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 836 x 514
+2025/07/10 21:58:01 178907343 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 21:58:01 178907437 cff945b9 [INFO Client 31168] : You have entered Alleyways.
+2025/07/10 21:58:01 178907843 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 21:58:05 178911187 b8f24806 [WARN Client 31168] Could not find skill location memory buff for melee attack action that thinks it should have one
+2025/07/10 21:58:55 178960921 cff945b9 [INFO Client 31168] Jin, the Lummox: Oooh! Kin dan bi bi bah beh.
+2025/07/10 21:59:18 178984765 cff945b9 [INFO Client 31168] : You have received an Atlas Skill Point.
+2025/07/10 22:00:29 179055453 88a91042 [DEBUG Client 31168] Got Instance Details from login server
+2025/07/10 22:00:29 179055468 82998930 [INFO Client 31168] [SHADER] Delay: OFF
+2025/07/10 22:00:29 179055468 ca3a6a33 [INFO Client 31168] Connecting to instance server at 169.55.97.187:6112 
+2025/07/10 22:00:29 179055484 ca3a5130 [DEBUG Client 31168] Connect time to instance server was 16ms
+2025/07/10 22:00:29 179055515 1186a0e7 [DEBUG Client 31168] Client-Safe Instance ID = 2881348197
+2025/07/10 22:00:29 179055515 1186a064 [DEBUG Client 31168] Generating level 60 area "HideoutSpace" with seed 1
+2025/07/10 22:00:29 179055531 f22b6a02 [INFO Client 31168] Tile hash: 2718197086
+2025/07/10 22:00:29 179055531 f22b6a0d [INFO Client 31168] Doodad hash: 0
+2025/07/10 22:00:29 179055531 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 22:00:29 179055531 e03447a5 [INFO Client 31168] [SCENE] Set Source [Celestial Nebula Hideout]
+2025/07/10 22:00:29 179055546 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 310 x 310
+2025/07/10 22:00:29 179055546 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 238 x 238
+2025/07/10 22:00:29 179055765 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 22:00:30 179055921 cff945b9 [INFO Client 31168] : You have entered Celestial Nebula Hideout.
+2025/07/10 22:00:30 179056062 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 22:01:05 179091468 88a91042 [DEBUG Client 31168] Got Instance Details from login server
+2025/07/10 22:01:05 179091484 82998930 [INFO Client 31168] [SHADER] Delay: OFF
+2025/07/10 22:01:05 179091484 ca3a6a33 [INFO Client 31168] Connecting to instance server at 64.87.52.197:6112 
+2025/07/10 22:01:05 179091515 ca3a5130 [DEBUG Client 31168] Connect time to instance server was 31ms
+2025/07/10 22:01:05 179091546 1186a0e7 [DEBUG Client 31168] Client-Safe Instance ID = 1725865852
+2025/07/10 22:01:05 179091546 1186a064 [DEBUG Client 31168] Generating level 72 area "MapWorldsGhetto" with seed 1332761673
+2025/07/10 22:01:06 179092062 f22b6a02 [INFO Client 31168] Tile hash: 475430552
+2025/07/10 22:01:06 179092062 f22b6a0d [INFO Client 31168] Doodad hash: 2637002587
+2025/07/10 22:01:06 179092093 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 22:01:06 179092093 e03447a5 [INFO Client 31168] [SCENE] Set Source [Ghetto]
+2025/07/10 22:01:06 179092109 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 690 x 690
+2025/07/10 22:01:06 179092156 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 529 x 529
+2025/07/10 22:01:06 179092234 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 22:01:06 179092359 cff945b9 [INFO Client 31168] : You have entered Ghetto.
+2025/07/10 22:01:06 179092609 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 22:01:09 179095546 b8f24806 [WARN Client 31168] Could not find skill location memory buff for melee attack action that thinks it should have one
+2025/07/10 22:01:14 179099968 cff945b9 [INFO Client 31168] Vorlena, the Gilded: You are nothing!
+2025/07/10 22:01:17 179103484 cff945b9 [INFO Client 31168] Niko, Master of the Depths: This'll do nicely, exile.
+2025/07/10 22:01:48 179133953 cff945b9 [INFO Client 31168] : You have received an Atlas Skill Point.
+2025/07/10 22:02:00 179146343 cff945b9 [INFO Client 31168] Niko, Master of the Depths: This'll do nicely, exile.
+2025/07/10 22:02:38 179184406 88a91042 [DEBUG Client 31168] Got Instance Details from login server
+2025/07/10 22:02:38 179184406 82998930 [INFO Client 31168] [SHADER] Delay: OFF
+2025/07/10 22:02:38 179184406 ca3a6a33 [INFO Client 31168] Connecting to instance server at 64.87.52.173:6112 
+2025/07/10 22:02:38 179184437 ca3a5130 [DEBUG Client 31168] Connect time to instance server was 15ms
+2025/07/10 22:02:38 179184453 1186a0e7 [DEBUG Client 31168] Client-Safe Instance ID = 3091710340
+2025/07/10 22:02:38 179184453 1186a064 [DEBUG Client 31168] Generating level 72 area "MapSideArea1_1" with seed 263602139
+2025/07/10 22:02:38 179184781 f22b6a02 [INFO Client 31168] Tile hash: 4216976927
+2025/07/10 22:02:38 179184781 f22b6a0d [INFO Client 31168] Doodad hash: 3010123613
+2025/07/10 22:02:38 179184812 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 22:02:38 179184812 e03447a5 [INFO Client 31168] [SCENE] Set Source [Strange Sinkhole]
+2025/07/10 22:02:38 179184812 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 410 x 370
+2025/07/10 22:02:38 179184828 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 315 x 284
+2025/07/10 22:02:39 179185218 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 22:02:39 179185312 cff945b9 [INFO Client 31168] : You have entered Strange Sinkhole.
+2025/07/10 22:02:39 179185531 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 22:02:40 179186843 88a91042 [DEBUG Client 31168] Got Instance Details from login server
+2025/07/10 22:02:41 179186843 82998930 [INFO Client 31168] [SHADER] Delay: OFF
+2025/07/10 22:02:41 179186843 ca3a6a33 [INFO Client 31168] Connecting to instance server at 64.87.52.197:6112 
+2025/07/10 22:02:41 179186875 ca3a5130 [DEBUG Client 31168] Connect time to instance server was 16ms
+2025/07/10 22:02:41 179186890 1186a0e7 [DEBUG Client 31168] Client-Safe Instance ID = 1725865852
+2025/07/10 22:02:41 179186890 1186a064 [DEBUG Client 31168] Generating level 72 area "MapWorldsGhetto" with seed 1332761673
+2025/07/10 22:02:41 179187156 f22b6a02 [INFO Client 31168] Tile hash: 475430552
+2025/07/10 22:02:41 179187156 f22b6a0d [INFO Client 31168] Doodad hash: 2637002587
+2025/07/10 22:02:41 179187171 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 22:02:41 179187171 e03447a5 [INFO Client 31168] [SCENE] Set Source [Ghetto]
+2025/07/10 22:02:41 179187171 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 690 x 690
+2025/07/10 22:02:41 179187218 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 529 x 529
+2025/07/10 22:02:41 179187312 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 22:02:41 179187421 cff945b9 [INFO Client 31168] : You have entered Ghetto.
+2025/07/10 22:02:41 179187578 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 22:03:25 179231609 b8f24806 [WARN Client 31168] Could not find skill location memory buff for melee attack action that thinks it should have one
+2025/07/10 22:03:42 179248765 cff945b9 [INFO Client 31168] Shera, the Hobbler: You're not Cyaxan, are you? I'd hate to have to be nice.
+2025/07/10 22:04:01 179267640 cff945b9 [INFO Client 31168] Shera, the Hobbler: What'll it be, then?
+2025/07/10 22:04:36 179302296 cff945b9 [INFO Client 31168] Shera, the Hobbler: Ugh. Bor-ing!
+2025/07/10 22:04:49 179315562 cff945b9 [INFO Client 31168] Vorlena, the Gilded: Die quickly!
+2025/07/10 22:05:42 179368390 88a91042 [DEBUG Client 31168] Got Instance Details from login server
+2025/07/10 22:05:42 179368390 82998930 [INFO Client 31168] [SHADER] Delay: OFF
+2025/07/10 22:05:42 179368390 ca3a6a33 [INFO Client 31168] Connecting to instance server at 64.87.52.231:6112 
+2025/07/10 22:05:42 179368437 ca3a5130 [DEBUG Client 31168] Connect time to instance server was 31ms
+2025/07/10 22:05:42 179368468 1186a0e7 [DEBUG Client 31168] Client-Safe Instance ID = 3742454694
+2025/07/10 22:05:42 179368468 1186a064 [DEBUG Client 31168] Generating level 60 area "HideoutSpace" with seed 1
+2025/07/10 22:05:42 179368468 f22b6a02 [INFO Client 31168] Tile hash: 2718197086
+2025/07/10 22:05:42 179368468 f22b6a0d [INFO Client 31168] Doodad hash: 0
+2025/07/10 22:05:42 179368484 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 22:05:42 179368484 e03447a5 [INFO Client 31168] [SCENE] Set Source [Celestial Nebula Hideout]
+2025/07/10 22:05:42 179368484 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 310 x 310
+2025/07/10 22:05:42 179368484 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 238 x 238
+2025/07/10 22:05:42 179368765 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 22:05:43 179368921 cff945b9 [INFO Client 31168] : You have entered Celestial Nebula Hideout.
+2025/07/10 22:05:43 179369078 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 22:29:45 180811578 cff945b9 [INFO Client 31168] : AFK mode is now ON. Autoreply "This player is AFK."
+2025/07/10 22:39:47 181413734 cff945b9 [INFO Client 31168] : AFK mode is now OFF.
+2025/07/10 22:41:31 181516953 cff945b9 [INFO Client 31168] @To Jwl_: Hi, I would like to buy your Darkray Vectors, Dragonscale Boots listed for 1 chaos in Mercenaries (stash tab "~price 1 chaos"; position: left 22, top 9)
+2025/07/10 22:41:41 181527421 88a91042 [DEBUG Client 31168] Got Instance Details from login server
+2025/07/10 22:41:41 181527437 82998930 [INFO Client 31168] [SHADER] Delay: OFF
+2025/07/10 22:41:41 181527437 ca3a6a33 [INFO Client 31168] Connecting to instance server at 172.240.69.93:6112 
+2025/07/10 22:41:41 181527515 ca3a5130 [DEBUG Client 31168] Connect time to instance server was 78ms
+2025/07/10 22:41:41 181527609 1186a0e7 [DEBUG Client 31168] Client-Safe Instance ID = 1245492527
+2025/07/10 22:41:41 181527609 1186a064 [DEBUG Client 31168] Generating level 20 area "HideoutBaths" with seed 1
+2025/07/10 22:41:41 181527812 f22b6a02 [INFO Client 31168] Tile hash: 3779661124
+2025/07/10 22:41:41 181527812 f22b6a0d [INFO Client 31168] Doodad hash: 1325010602
+2025/07/10 22:41:41 181527828 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 22:41:41 181527828 e03447a5 [INFO Client 31168] [SCENE] Set Source [Luxurious Hideout]
+2025/07/10 22:41:41 181527843 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 270 x 270
+2025/07/10 22:41:42 181527843 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 207 x 207
+2025/07/10 22:41:42 181528015 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 22:41:42 181528281 cff945b9 [INFO Client 31168] : You have entered Luxurious Hideout.
+2025/07/10 22:41:45 181531437 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 22:41:50 181536546 cff945b9 [INFO Client 31168] : Trade accepted.
+2025/07/10 22:41:52 181538734 88a91042 [DEBUG Client 31168] Got Instance Details from login server
+2025/07/10 22:41:52 181538734 82998930 [INFO Client 31168] [SHADER] Delay: OFF
+2025/07/10 22:41:52 181538734 ca3a6a33 [INFO Client 31168] Connecting to instance server at 64.87.52.231:6112 
+2025/07/10 22:41:52 181538765 ca3a5130 [DEBUG Client 31168] Connect time to instance server was 16ms
+2025/07/10 22:41:52 181538796 1186a0e7 [DEBUG Client 31168] Client-Safe Instance ID = 3742454694
+2025/07/10 22:41:52 181538796 1186a064 [DEBUG Client 31168] Generating level 60 area "HideoutSpace" with seed 1
+2025/07/10 22:41:52 181538796 f22b6a02 [INFO Client 31168] Tile hash: 2718197086
+2025/07/10 22:41:52 181538796 f22b6a0d [INFO Client 31168] Doodad hash: 0
+2025/07/10 22:41:52 181538812 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 22:41:52 181538812 e03447a5 [INFO Client 31168] [SCENE] Set Source [Celestial Nebula Hideout]
+2025/07/10 22:41:52 181538812 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 310 x 310
+2025/07/10 22:41:52 181538812 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 238 x 238
+2025/07/10 22:41:53 181539046 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 22:41:53 181539171 cff945b9 [INFO Client 31168] : You have entered Celestial Nebula Hideout.
+2025/07/10 22:41:53 181539312 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 22:42:03 181548968 cff945b9 [INFO Client 31168] : Failed to apply item: Item already has the maximum number of Sockets.
+2025/07/10 22:42:03 181549156 cff945b9 [INFO Client 31168] : Failed to apply item: Item already has the maximum number of Sockets.
+2025/07/10 22:44:29 181695343 88a91042 [DEBUG Client 31168] Got Instance Details from login server
+2025/07/10 22:44:29 181695359 82998930 [INFO Client 31168] [SHADER] Delay: OFF
+2025/07/10 22:44:29 181695359 ca3a6a33 [INFO Client 31168] Connecting to instance server at 64.87.52.253:6112 
+2025/07/10 22:44:29 181695390 ca3a5130 [DEBUG Client 31168] Connect time to instance server was 16ms
+2025/07/10 22:44:29 181695406 1186a0e7 [DEBUG Client 31168] Client-Safe Instance ID = 3546136981
+2025/07/10 22:44:29 181695406 1186a064 [DEBUG Client 31168] Generating level 70 area "MapWorldsDefiledCathedral" with seed 2679331729
+2025/07/10 22:44:30 181696046 f22b6a02 [INFO Client 31168] Tile hash: 394353993
+2025/07/10 22:44:30 181696046 f22b6a0d [INFO Client 31168] Doodad hash: 946515926
+2025/07/10 22:44:30 181696109 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 22:44:30 181696109 e03447a5 [INFO Client 31168] [SCENE] Set Source [Defiled Cathedral]
+2025/07/10 22:44:30 181696125 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 930 x 930
+2025/07/10 22:44:30 181696187 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 713 x 713
+2025/07/10 22:44:30 181696296 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 22:44:30 181696406 cff945b9 [INFO Client 31168] : You have entered Defiled Cathedral.
+2025/07/10 22:44:30 181696703 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 22:44:33 181699796 b8f24806 [WARN Client 31168] Could not find skill location memory buff for melee attack action that thinks it should have one
+2025/07/10 22:44:51 181717000 cff945b9 [INFO Client 31168] Vorlena, the Gilded: A swift end!
+2025/07/10 22:44:53 181719796 bce2d6b2 [INFO Client 31168] Steam stats stored
+2025/07/10 22:45:32 181758250 cff945b9 [INFO Client 31168] Niko, Master of the Depths: Good find, exile.
+2025/07/10 22:45:54 181780437 cff945b9 [INFO Client 31168] Malphon Listus: I am the judgment of Innocence, made manifest!
+2025/07/10 22:45:56 181782312 cff945b9 [INFO Client 31168] Malphon Listus: You stand at a crossroads. Choose wisely.
+2025/07/10 22:46:00 181786203 cff945b9 [INFO Client 31168] Malphon Listus: Flee where you will! Innocence sees all.
+2025/07/10 22:46:06 181792375 cff945b9 [INFO Client 31168] Vorlena, the Gilded: You are nothing!
+2025/07/10 22:46:11 181797265 cff945b9 [INFO Client 31168] Malphon Listus: You stand at a crossroads. Choose wisely.
+2025/07/10 22:46:12 181798312 cff945b9 [INFO Client 31168] Malphon Listus: You cannot outrun the judgment of Innocence. Only delay it.
+2025/07/10 22:46:22 181808015 cff945b9 [INFO Client 31168] Niko, Master of the Depths: This'll do nicely, exile.
+2025/07/10 22:46:43 181829531 cff945b9 [INFO Client 31168] Niko, Master of the Depths: This'll do nicely, exile.
+2025/07/10 22:47:13 181859640 88a91042 [DEBUG Client 31168] Got Instance Details from login server
+2025/07/10 22:47:13 181859640 82998930 [INFO Client 31168] [SHADER] Delay: OFF
+2025/07/10 22:47:13 181859640 ca3a6a33 [INFO Client 31168] Connecting to instance server at 64.87.52.39:6112 
+2025/07/10 22:47:13 181859671 ca3a5130 [DEBUG Client 31168] Connect time to instance server was 16ms
+2025/07/10 22:47:13 181859703 1186a0e7 [DEBUG Client 31168] Client-Safe Instance ID = 1694110309
+2025/07/10 22:47:13 181859703 1186a064 [DEBUG Client 31168] Generating level 60 area "HideoutSpace" with seed 1
+2025/07/10 22:47:13 181859703 f22b6a02 [INFO Client 31168] Tile hash: 2718197086
+2025/07/10 22:47:13 181859703 f22b6a0d [INFO Client 31168] Doodad hash: 0
+2025/07/10 22:47:13 181859718 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 22:47:13 181859718 e03447a5 [INFO Client 31168] [SCENE] Set Source [Celestial Nebula Hideout]
+2025/07/10 22:47:13 181859718 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 310 x 310
+2025/07/10 22:47:13 181859718 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 238 x 238
+2025/07/10 22:47:14 181859937 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 22:47:14 181860093 cff945b9 [INFO Client 31168] : You have entered Celestial Nebula Hideout.
+2025/07/10 22:47:14 181860281 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 22:47:43 181889421 88a91042 [DEBUG Client 31168] Got Instance Details from login server
+2025/07/10 22:47:43 181889437 82998930 [INFO Client 31168] [SHADER] Delay: OFF
+2025/07/10 22:47:43 181889437 ca3a6a33 [INFO Client 31168] Connecting to instance server at 64.87.52.209:6112 
+2025/07/10 22:47:43 181889468 ca3a5130 [DEBUG Client 31168] Connect time to instance server was 31ms
+2025/07/10 22:47:43 181889500 1186a0e7 [DEBUG Client 31168] Client-Safe Instance ID = 1200900049
+2025/07/10 22:47:43 181889500 1186a064 [DEBUG Client 31168] Generating level 72 area "MapWorldsCemetery" with seed 2140476478
+2025/07/10 22:47:44 181890062 f22b6a02 [INFO Client 31168] Tile hash: 556598752
+2025/07/10 22:47:44 181890062 f22b6a0d [INFO Client 31168] Doodad hash: 1348490428
+2025/07/10 22:47:44 181890140 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 22:47:44 181890140 e03447a5 [INFO Client 31168] [SCENE] Set Source [Cemetery]
+2025/07/10 22:47:44 181890140 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 810 x 600
+2025/07/10 22:47:44 181890203 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 621 x 460
+2025/07/10 22:47:45 181891109 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 22:47:45 181891218 cff945b9 [INFO Client 31168] : You have entered Cemetery.
+2025/07/10 22:47:45 181891468 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 22:47:48 181894109 b8f24806 [WARN Client 31168] Could not find skill location memory buff for melee attack action that thinks it should have one
+2025/07/10 22:48:04 181910062 cff945b9 [INFO Client 31168] Zevrika, the Broadhead: Were we back in Trarthus, you'd already be dead! Haha!
+2025/07/10 22:48:08 181914406 cff945b9 [INFO Client 31168] Zevrika, the Broadhead: Get on with it!
+2025/07/10 22:48:14 181920156 cff945b9 [INFO Client 31168] Zevrika, the Broadhead: Time to bag me a kill!
+2025/07/10 22:48:16 181922203 cff945b9 [INFO Client 31168] Zevrika, the Broadhead: Bleed for me!
+2025/07/10 22:48:17 181923265 cff945b9 [INFO Client 31168] : FLUKER_STRIKE has been slain.
+2025/07/10 22:48:17 181923500 cff945b9 [INFO Client 31168] Zevrika, the Broadhead: Now let's have a look at those virtue gems...
+2025/07/10 22:48:20 181926281 88a91042 [DEBUG Client 31168] Got Instance Details from login server
+2025/07/10 22:48:20 181926296 82998930 [INFO Client 31168] [SHADER] Delay: OFF
+2025/07/10 22:48:20 181926296 ca3a6a33 [INFO Client 31168] Connecting to instance server at 64.87.52.39:6112 
+2025/07/10 22:48:20 181926328 ca3a5130 [DEBUG Client 31168] Connect time to instance server was 16ms
+2025/07/10 22:48:20 181926343 1186a0e7 [DEBUG Client 31168] Client-Safe Instance ID = 1694110309
+2025/07/10 22:48:20 181926343 1186a064 [DEBUG Client 31168] Generating level 60 area "HideoutSpace" with seed 1
+2025/07/10 22:48:20 181926359 f22b6a02 [INFO Client 31168] Tile hash: 2718197086
+2025/07/10 22:48:20 181926359 f22b6a0d [INFO Client 31168] Doodad hash: 0
+2025/07/10 22:48:20 181926359 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 22:48:20 181926359 e03447a5 [INFO Client 31168] [SCENE] Set Source [Celestial Nebula Hideout]
+2025/07/10 22:48:20 181926359 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 310 x 310
+2025/07/10 22:48:20 181926375 df74df9b [DEBUG Client 31168] [SCENE] Static Walkability Texture: 238 x 238
+2025/07/10 22:48:20 181926609 1187ac02 [DEBUG Client 31168] Joined guild named GodBeast with 22 members 
+2025/07/10 22:48:20 181926765 cff945b9 [INFO Client 31168] : You have entered Celestial Nebula Hideout.
+2025/07/10 22:48:21 181926921 82998930 [INFO Client 31168] [SHADER] Delay: ON
+2025/07/10 22:48:31 181937812 890d9d96 [INFO Client 31168] Async connecting to wdc01.login.pathofexile.com:20481
+2025/07/10 22:48:32 181937875 890d9d13 [INFO Client 31168] Connected to wdc01.login.pathofexile.com in 16ms.
+2025/07/10 22:48:32 181938171 e03447a5 [INFO Client 31168] [SCENE] Set Source [(null)]
+2025/07/10 22:48:32 181938281 e03447a5 [INFO Client 31168] [SCENE] Set Source [(unknown)]
+2025/07/10 22:48:32 181938296 2e06ba64 [DEBUG Client 31168] [SCENE] Height Map Texture: 800 x 800

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedClast</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Map detector</h1>
+        <p>Watching <code id="log-file-path">Client.txt</code> for area changes... </p>
+        <div class="status-box">
+            <span>
+                Current Area:
+                <h2 id="area-name">Waiting for area entry...</h2>
+            </span>
+        </div>
+    </div>
+    <script>
+        window.electronAPI.onAreaChanged((areaName) => {
+            console.log("Area changed in renderer:", areaName);
+            document.getElementById('area-name').textContent = areaName;
+        });
+    </script>
+</body>
+
+</html>
