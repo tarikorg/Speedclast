@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require('electron')
+const { app, BrowserWindow, ipcMain, screen } = require('electron')
 const path = require('path');
 const fs = require('fs');
 
@@ -8,6 +8,7 @@ const fs = require('fs');
 const logFilePath = path.join(app.getAppPath(), '..', 'log', 'Client.txt')
 
 let mainWindow;
+let overlayWindow;
 
 function createWindow() {
     mainWindow = new BrowserWindow({
@@ -18,29 +19,67 @@ function createWindow() {
             contextIsolation: true,
             nodeIntegration: false,
         },
+        title: 'SpeedClast'
     }); //end of Browserwindow
 
     mainWindow.loadFile(path.join(__dirname, 'index.html'));
 
+    mainWindow.on('closed', () => {
+        app.quit();
+    })
+
+
 }//create window
+
+function createOverlayWindow() {
+    const { width, height } = screen.getPrimaryDisplay().workAreaSize;
+
+    overlayWindow = new BrowserWindow({
+        width: 300,
+        height: 100,
+        x: Math.floor(width / 2) - 150,
+        y: 100,
+        frame: false,
+        transparent: true,
+        alwaysOnTop: true,
+        skipTaskbar: true,
+        webPreferences: {
+            preload: path.join(__dirname, 'overlay-preload.js'),
+            contextIsolation: true,
+            nodeIntegration: false,
+        }
+    })
+    overlayWindow.loadFile(path.join(__dirname, 'overlay.html'));
+    overlayWindow.setIgnoreMouseEvents(true); //clickthrough enabled
+}//createOverlayWindow end
+
+
+
 
 app.whenReady().then(() => {
     createWindow();
+    createOverlayWindow();
 
     app.on('activate', () => {
         if (BrowserWindow.getAllWindows().length === 0) {
             createWindow();
+            createOverlayWindow();
         }
     })
 
     startLogWatcher();
 })//app whenready
 
+
+
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') {
         app.quit();
     }
 })//app.on.windowallclosed
+
+
+
 
 function startLogWatcher() {
     console.log(`Watching for changes in: ${logFilePath}`);
@@ -83,6 +122,9 @@ function startLogWatcher() {
                                 console.log(`Area detected: ${areaName}`);
                                 // Send the detected area name to the renderer process (our UI)
                                 mainWindow.webContents.send('area-changed', areaName);
+                                if (overlayWindow && !overlayWindow.isDestroyed()) {
+                                    overlayWindow.webContents.send('area-changed', areaName);
+                                }
                             }
                         }
                     });
@@ -96,3 +138,13 @@ function startLogWatcher() {
         }
     });
 }
+
+ipcMain.on('toggle-overlay', () => {
+    if (overlayWindow && !overlayWindow.isDestroyed()) {
+        if (overlayWindow.isVisible()) {
+            overlayWindow.hide();
+        } else {
+            overlayWindow.show();
+        }
+    }
+})

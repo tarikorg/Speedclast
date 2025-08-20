@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';"> -->
+    <link rel="stylesheet" href="overlay.css">
+</head>
+
+<body>
+
+    <div class="overlay-container">
+        <div class="area-box">
+            <div class="area-label">CURRENT AREA:</div>
+            <div id="overlay-area-name">Waiting...</div>
+        </div>
+
+
+    </div>
+
+    <script>
+        window.overlayAPI.onAreaChanged((areaName) => {
+            const areaElement = document.getElementById('overlay-area-name');
+            areaElement.textContent = areaName;
+
+            //visual effect when area changes
+            areaElement.classList.add('highlight');
+            setTimeout(() => {
+                areaElement.classList.remove('highlight');
+            }, 1500)
+        })
+    </script>
+
+</body>
+
+</html>

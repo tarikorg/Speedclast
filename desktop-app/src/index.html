@@ -19,12 +19,29 @@
                 <h2 id="area-name">Waiting for area entry...</h2>
             </span>
         </div>
+
+        <div class="controls">
+            <button id="toggle-overlay" class="button">Toggle Overlay</button>
+        </div>
+
+
     </div>
     <script>
+        // We listen for the 'area-changed' event and update the text.
         window.electronAPI.onAreaChanged((areaName) => {
-            console.log("Area changed in renderer:", areaName);
-            document.getElementById('area-name').textContent = areaName;
+            const areaElement = document.getElementById('area-name');
+            areaElement.textContent = areaName;
+            areaElement.classList.add('highlight');
+            // Remove the highlight after the animation to allow it to trigger again
+            setTimeout(() => {
+                areaElement.classList.remove('highlight');
+            }, 500);
         });
+
+        //toggle
+        document.getElementById('toggle-overlay').addEventListener('click', () => {
+            window.electronAPI.toggleOverlay();
+        })
     </script>
 </body>
 
