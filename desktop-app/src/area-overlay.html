@@ -83,7 +83,6 @@
             // Layout images support (array of images)
             const imagesDiv = document.getElementById('images');
             imagesDiv.innerHTML = '';
-
             if (Array.isArray(info.layoutImage) && info.layoutImage.length) {
                 info.layoutImage.forEach((img, index) => {
                     const imgWrapper = document.createElement('div');
@@ -95,7 +94,9 @@
                     imgElement.className = 'layout-img';
 
                     // Add click handler to open in image overlay
-                    imgElement.addEventListener('click', () => {
+                    imgElement.addEventListener('click', (e) => {
+                        e.stopPropagation(); // Prevent event bubbling
+                        console.log("Opening image in overlay:", img);
                         window.overlayAPI.openImageInOverlay(`app://assets/maps/${img}`);
                     });
 

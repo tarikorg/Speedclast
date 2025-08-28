@@ -2,11 +2,14 @@ const { contextBridge, ipcRenderer } = require('electron');
 
 contextBridge.exposeInMainWorld('imageOverlayAPI', {
     onAreaChanged: (callback) => {
-        ipcRenderer.on('area-changed', (_event, areaName, mapInfo) => callback(areaName, mapInfo))
+        ipcRenderer.on('area-changed', (_event, areaName, mapInfo) => callback(areaName, mapInfo));
     },
 
     onSetImage: (callback) => {
-        ipcRenderer.on('set-image', (_event, imagePath) => callback(imagePath));
+        ipcRenderer.on('set-image', (_event, imagePath) => {
+            console.log("Image overlay received path:", imagePath);
+            callback(imagePath);
+        });
     },
 
     startDrag: (overlayType, mousePos) => {
@@ -14,7 +17,7 @@ contextBridge.exposeInMainWorld('imageOverlayAPI', {
     },
 
     toggleOverlay: (overlayType) => {
-        ipcRenderer.send('toggle-overlay', overlayType)
+        ipcRenderer.send('toggle-overlay', overlayType);
     },
 
     updateSettings: (overlayType, settings) => {
@@ -22,7 +25,6 @@ contextBridge.exposeInMainWorld('imageOverlayAPI', {
     },
 
     requestCurrentArea: () => {
-        ipcRenderer.send('request-current-area')
+        ipcRenderer.send('request-current-area');
     }
-
-})
+});

@@ -1,0 +1,122 @@
+{
+  "Clearfell": {
+    "guide": "1. Head to the North to kill the boss for the +10% to Cold Resistance buff\n2. Optional: take a detour to the right or left to the Mysterious Campsite for an additional Lvl 1 Uncut Skill Gem\n3. Mud Burrow: Grants a Lvl 2 Uncut Skill Gem (Boss Drop) and Lvl 1 Uncut Support (Reward). Not often worth doing.",
+    "bossReward": null,
+    "rewards": "+10% Cold Res, Skill Gem (Lvl 1), Lvl 2 Uncut Skill Gem (Boss Drop) and Lvl 1 Uncut Support (Reward)",
+    "pointsOfInterest": "Boss: +10% Cold Res\nMysterious Campsite - Skill Gem (Lvl 1)\nMud Burrow - Boss drops Lvl 2 Uncut Skill Gem, Quest reward is Uncut Support Gem. Usually ignore this.",
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "The Grelwood": {
+    "guide": "1. If you find the Grim Tangle, enter the zone, grab the waypoint and go back out\n2. If you find The Red Vale before finding the Waypoint, you can go in, grab the Waypoint and head back to Grelwood, or clear the Red Vale First\n3. Follow the diamond pattern",
+    "bossReward": null,
+    "rewards": "Uncut Skill Gem (Lvl 1), Flasks and Uncut Skill Gem (Lvl 1)",
+    "pointsOfInterest": "Tree of Souls + Waypoint\nBoss (Brambleghast) - Uncut Skill Gem (Lvl 1)\nGrim Tangle Entrance\nAreagne’s Hut - Flasks and Uncut Skill Gem (Lvl 1)",
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "The Red Vale": {
+    "guide": "Follow a general loop pattern. The Rust Altars are fairly spread out but occasionally form a vague line or triangular pattern. Occasionally one will spawn in the middle of the zone next to the blood river.",
+    "bossReward": null,
+    "rewards": null,
+    "pointsOfInterest": null,
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "The Grim Tangle": {
+    "guide": "heading in the opposite direction of your entrance, you should be able to navigate the area with a bit more confidence",
+    "bossReward": "The Rotten Druid",
+    "rewards": "Uncut Support Gem Lvl 1",
+    "pointsOfInterest": "Boss - The Rotten Druid: Uncut Support Gem Lvl 1",
+    "proTip": "After Una spawns in the area, click her to begin her song and immediately press Esc and Respawn at Checkpoint. This will skip her song so you can proceed more quickly",
+    "layoutImage": ""
+  },
+  "Cemetery of the Eternals": {
+    "guide": "1. Fairly often (57+%) one Tomb will spawn alongside the same wall as the Boss arena, so hug one wall and head in that direction, then check the other side\n2. Other than that it seems Tombs tend to spawn along the side walls, where the Sarcophagus with the Normal Rarity Ring seems to favor the far opposite wall.\n3. Likely you’ll have to circle the area and hope for the best for now until we establish a more clean routing pattern",
+    "bossReward": null,
+    "rewards": "Normal Rarity Ring",
+    "pointsOfInterest": "Tomb of the Consort\nMausoleum of the Praetor\nAncient Ruin Sarcophagus: Normal Rarity Ring",
+    "proTip": "After defeating Draven and Asinia, open the gates beside the Waypoint and trigger Checkpoint afterwards, then hit Esc and Respawn at Checkpoint - this will skip his long dialogue before the fight",
+    "layoutImage": ""
+  },
+  "Mausoleum of the Praetor": {
+    "guide": "1. The Boss arena seems to often spawn in the opposite quadrant of your entrance tile\n2. Haddoq's suggestion (above): \"If you head to the middle of the area and find the room that looks like the one in the middle, you can more often than not draw a line from the area entrance, through that room to the boss room.\"",
+    "bossReward": null,
+    "rewards": null,
+    "pointsOfInterest": null,
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "Tomb of the Consort": {
+    "guide": "Haddoq's Clues: \"Generally, most often the boss area will be along the top of the area. In testing this was disproven once where the boss area was at the center. Area type could be square type or maze type, but follow corridors via the centre to the top and hopefully you’ll find it.\"",
+    "bossReward": null,
+    "rewards": "Uncut Support Gem Lvl 1",
+    "pointsOfInterest": "Haunted Treasure: spawns a Rare Eternal Knight that drops an Uncut Support Gem Lvl 1",
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "Hunting Grounds": {
+    "guide": "1. Follow the edges and avoid the middle. A point of interest will be found in each corner, or close to the corner, of the area\n2. If you find the entrance to Ogham Farmlands, go in, get the Waypoint and go back to Hunting Grounds\n3. If you find entrance to Freythorn, go in, get the Waypoint, and go back to Hunting Grounds\n4. Crowbell Boss: The tile below precedes the boss room. The Boss arena is preceded by a narrow funnel that leads you to the first area of the fight",
+    "bossReward": "Crowbell Boss",
+    "rewards": "Book of Specialisation, Uncut Skill Gem (Lvl 4)",
+    "pointsOfInterest": "Crowbell Boss (Book of Specialisation)\nRitual Encounter in Middle of Area: Uncut Skill Gem (Lvl 4)\nOgham Farmlands Entrance\nFreythorn Entrance",
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "Freythorn": {
+    "guide": "1. Make a loop and hope for the best\n2. The boss arena seems to spawn opposite the entrance fairly often, but not always",
+    "bossReward": null,
+    "rewards": "+30 to Maximum Spirit and your first Uncut Spirit Gem",
+    "pointsOfInterest": null,
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "Ogham Farmlands": {
+    "guide": "Exit is always on the opposite wall of the entrance\n\n1. Head the opposite direction from the entrance. Find the Lute Box\n2. Continue in the opposite direction from the entrance until you hit the wall. If the exit isn’t there, follow the wall down and you’ll find the entrance to Ogham Village",
+    "bossReward": null,
+    "rewards": "Book of Specialisation",
+    "pointsOfInterest": "Una’s Hut with her Lute Box will be found behind a long hut beside some carts blocking the way. You’ll need to go around, but will know her hut is behind this hut/cart combo every time",
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "Ogham Village": {
+    "guide": "Hug the right-hand wall from the entrance and head up (North) toward the boss arena",
+    "bossReward": null,
+    "rewards": null,
+    "pointsOfInterest": "Renly's Tools: You will need to find Renly’s Tools in this area to unlock the Smithing Bench.",
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "The Manor Ramparts": {
+    "guide": "Follow the U-shaped pattern. If the area opens up to the bottom left (Southwest), the entrance to The Ogham Manor will be in the North/Northeast",
+    "bossReward": null,
+    "rewards": "Uncut Support Gem (Lvl 1)",
+    "pointsOfInterest": "Gallows: Clicking the hanging body will grant you an Uncut Support Gem (Lvl 1)",
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "The Ogham Manor: First Floor": {
+    "guide": "1. Head Northeast, cross the bridge, keep heading North and kill Candlemass for +10% to Fire Resistance\n2. From there, head to the right (Southeast) to find the Entrance to Level 2",
+    "bossReward": "Candlemass",
+    "rewards": "+10% to Fire Resistance",
+    "pointsOfInterest": "Candlemass (Boss) will always spawn along the Northeast or Northwest wall",
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "Ogham Manor: Second Floor": {
+    "guide": "1. Head in the opposite direction of the entrance, cross the bridge, and keep going Northeast to find the Entrance to Level 3\n2. The area may turn in you in more of a loop than a straight line with a slight detour but this detour isn't often too large",
+    "bossReward": null,
+    "rewards": null,
+    "pointsOfInterest": null,
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "Ogham Manor: Third Floor": {
+    "guide": "Head in the opposite direction from the entrance, find the bridge and the shouting Count of Ogham and head down the elevator to fight the boss",
+    "bossReward": "Count of Ogham",
+    "rewards": null,
+    "pointsOfInterest": null,
+    "proTip": null,
+    "layoutImage": ""
+  }
+}
