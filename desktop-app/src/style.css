@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --primary-color: #e94560;
+    --secondary-color: #0f3460;
+    --background-color: #1a1a2e;
+    --card-background: #16213e;
+    --text-color: #e0e0e0;
+    --text-light: #c0c0c0;
+    --success-color: #50fa7b;
+    --border-color: #0f3460;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: var(--text-light);
+    margin-top: 0;
+}
+
+.datetime {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.user-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs {
+    display: flex;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 15px 20px;
+    color: var(--text-light);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.tab-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tab-btn.active {
+    background-color: var(--card-background);
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.tab-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+/* Dashboard layout */
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 900px) {
+    .dashboard-layout {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+.area-info-panel,
+.timer-panel {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+}
+
+.area-status-box {
+    margin-top: 10px;
+}
+
+.area-details {
+    margin-top: 15px;
+}
+
+.guide-section,
+.rewards-section,
+.images-section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(233, 69, 96, 0.3);
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: var(--text-color);
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+h4 {
+    color: var(--primary-color);
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.content-text {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.layout-thumbnails {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.image-thumbnail {
+    flex: 0 0 auto;
+}
+
+.layout-img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.layout-img:hover {
+    transform: scale(1.05);
+    border-color: var(--primary-color);
+}
+
+.no-images {
+    font-style: italic;
+    color: var(--text-light);
+    padding: 10px;
+}
+
+/* Timer Panel */
+.timer-controls-box {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.timer-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.action-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.action-btn:hover {
+    background-color: #ff5e7a;
+    transform: translateY(-2px);
+}
+
+.action-btn:active {
+    transform: translateY(0);
+}
+
+.overlay-toggles {
+    margin-top: 20px;
+}
+
+.toggle-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.toggle-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.toggle-group input[type="checkbox"] {
+    cursor: pointer;
+}
+
+/* Settings Tab */
+.settings-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .settings-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.settings-card {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+}
+
+.settings-form {
+    margin-top: 15px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    flex: 0 0 100px;
+}
+
+.form-row input[type="range"] {
+    flex: 1;
+}
+
+.value-display {
+    margin-left: 10px;
+    width: 30px;
+    text-align: right;
+}
+
+.apply-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.apply-btn:hover {
+    background-color: #ff5e7a;
+}
+
+/* Account Tab */
+.account-status {
+    text-align: center;
+}
+
+.status-card {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 15px;
+    border: 1px solid var(--border-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-light);
+    font-size: 14px;
+}

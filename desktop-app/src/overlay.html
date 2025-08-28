@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';"> -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self'; img-src 'self' app:;"> -->
     <link rel="stylesheet" href="overlay.css">
 </head>
 
 <body>
-
-    <div class="overlay-container">
-        <div class="area-box">
-            <div class="area-label">CURRENT AREA:</div>
-            <div id="overlay-area-name">Waiting...</div>
-        </div>
-
-
+    <div class="overlay-box">
+        <div class="area-title" id="area-name">Waiting...</div>
+        <div class="guide" id="guide"></div>
+        <div class="rewards" id="rewards"></div>
+        <div class="poi" id="poi"></div>
+        <div class="protip" id="protip"></div>
+        <div class="boss" id="boss"></div>
+        <div class="layout-images" id="images"></div>
     </div>
-
     <script>
-        window.overlayAPI.onAreaChanged((areaName) => {
-            const areaElement = document.getElementById('overlay-area-name');
-            areaElement.textContent = areaName;
+        function format(content) {
+            if (!content) return null;
+            return content.replace(/\n/g, '<br>');
+        }
+        window.overlayAPI.onAreaChanged((area, info) => {
+            document.getElementById('area-name').textContent = area;
 
-            //visual effect when area changes
-            areaElement.classList.add('highlight');
-            setTimeout(() => {
-                areaElement.classList.remove('highlight');
-            }, 1500)
-        })
+            document.getElementById('guide').innerHTML = info.guide ? `<b>Guide:</b><br>${format(info.guide)}` : '';
+            document.getElementById('rewards').innerHTML = info.rewards ? `<b>Rewards:</b> ${format(info.rewards)}` : '';
+            document.getElementById('poi').innerHTML = info.pointsOfInterest ? `<b>POI:</b> ${format(info.pointsOfInterest)}` : '';
+            document.getElementById('protip').innerHTML = info.proTip ? `<b>Pro Tip:</b> ${format(info.proTip)}` : '';
+            document.getElementById('boss').innerHTML = info.bossReward ? `<b>Boss Reward:</b> ${format(info.bossReward)}` : '';
+
+            // Layout images support (array of images)
+            const imagesDiv = document.getElementById('images');
+            imagesDiv.innerHTML = '';
+            if (Array.isArray(info.layoutImage) && info.layoutImage.length) {
+                info.layoutImage.forEach(img =>
+                    imagesDiv.innerHTML += `<img src="app://assets/maps/${img}" alt="Layout" class="layout-img">`
+                );
+            }
+        });
     </script>
-
 </body>
 
 </html>

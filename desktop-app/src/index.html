@@ -1,47 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpeedClast</title>
-
-    <link rel="stylesheet" href="styles.css">
+    <title>PoE Speedrun Tool - Milestone 4</title>
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>Map detector</h1>
-        <p>Watching <code id="log-file-path">Client.txt</code> for area changes... </p>
-        <div class="status-box">
-            <span>
-                Current Area:
-                <h2 id="area-name">Waiting for area entry...</h2>
-            </span>
+        <header>
+            <h1>Path of Exile 2 Speedrun Tool</h1>
+            <p class="subtitle">Real-time area guidance and speedrun timing</p>
+            <div class="datetime">
+                <span id="current-date">2025-08-26</span>
+                <span id="current-time">01:07:40</span>
+            </div>
+            <div class="user-info">
+                <span id="current-user">tarikorg</span>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
+                <button class="tab-btn" data-tab="settings">Settings</button>
+                <button class="tab-btn" data-tab="account">Account</button>
+            </div>
+
+            <div class="tab-content">
+                <!-- Dashboard Tab -->
+                <div class="tab-pane active" id="dashboard">
+                    <div class="dashboard-layout">
+                        <div class="area-info-panel">
+                            <h2>Current Area</h2>
+                            <div class="area-status-box">
+                                <h3 id="area-name">Waiting for area entry...</h3>
+
+                                <div class="area-details">
+                                    <div class="guide-section">
+                                        <h4>Guide:</h4>
+                                        <div id="guide-text" class="content-text">No area detected yet</div>
+                                    </div>
+
+                                    <div class="rewards-section">
+                                        <h4>Rewards:</h4>
+                                        <div id="rewards-text" class="content-text">None</div>
+                                    </div>
+
+                                    <div class="images-section">
+                                        <h4>Map Layouts:</h4>
+                                        <div id="layout-images" class="layout-thumbnails">
+                                            <div class="no-images">No images available</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timer-panel">
+                            <h2>Speedrun Timer</h2>
+                            <div class="timer-controls-box">
+                                <div class="timer-buttons">
+                                    <button id="start-timer" class="action-btn">Start</button>
+                                    <button id="pause-timer" class="action-btn">Pause</button>
+                                    <button id="reset-timer" class="action-btn">Reset</button>
+                                </div>
+                                <div class="overlay-toggles">
+                                    <h4>Overlays:</h4>
+                                    <div class="toggle-group">
+                                        <label>
+                                            <input type="checkbox" id="area-overlay-toggle" checked>
+                                            Area Guide
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" id="timer-overlay-toggle" checked>
+                                            Timer
+                                        </label>
+                                        <label>
+                                            <input type="checkbox" id="image-overlay-toggle">
+                                            Map Image
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Settings Tab -->
+                <div class="tab-pane" id="settings">
+                    <h2>Overlay Settings</h2>
+
+                    <div class="settings-grid">
+                        <div class="settings-card">
+                            <h3>Area Guide Overlay</h3>
+                            <div class="settings-form">
+                                <div class="form-row">
+                                    <label>Opacity:</label>
+                                    <input type="range" id="area-opacity" min="0.1" max="1" step="0.1" value="0.9">
+                                    <span class="value-display" id="area-opacity-value">0.9</span>
+                                </div>
+                                <button class="apply-btn" data-target="area">Apply Changes</button>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3>Timer Overlay</h3>
+                            <div class="settings-form">
+                                <div class="form-row">
+                                    <label>Opacity:</label>
+                                    <input type="range" id="timer-opacity" min="0.1" max="1" step="0.1" value="0.9">
+                                    <span class="value-display" id="timer-opacity-value">0.9</span>
+                                </div>
+                                <button class="apply-btn" data-target="timer">Apply Changes</button>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3>Image Overlay</h3>
+                            <div class="settings-form">
+                                <div class="form-row">
+                                    <label>Opacity:</label>
+                                    <input type="range" id="image-opacity" min="0.1" max="1" step="0.1" value="0.9">
+                                    <span class="value-display" id="image-opacity-value">0.9</span>
+                                </div>
+                                <button class="apply-btn" data-target="image">Apply Changes</button>
+                            </div>
+                        </div>
+
+                        <div class="settings-card">
+                            <h3>Keybinds</h3>
+                            <div class="settings-form">
+                                <p>Coming in a future update:</p>
+                                <ul>
+                                    <li>Toggle Area Overlay</li>
+                                    <li>Toggle Timer Overlay</li>
+                                    <li>Start/Pause Timer</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Account Tab -->
+                <div class="tab-pane" id="account">
+                    <div class="account-status">
+                        <h2>Account Status</h2>
+                        <div class="status-card">
+                            <p>Currently logged in as: <strong id="username">tarikorg</strong></p>
+                            <p>Account features will be available in the next milestone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="controls">
-            <button id="toggle-overlay" class="button">Toggle Overlay</button>
-        </div>
-
-
+        <footer>
+            <p>PoE Speedrun Tool • Version 0.2.0 • Created by tarikorg</p>
+        </footer>
     </div>
+
     <script>
-        // We listen for the 'area-changed' event and update the text.
-        window.electronAPI.onAreaChanged((areaName) => {
-            const areaElement = document.getElementById('area-name');
-            areaElement.textContent = areaName;
-            areaElement.classList.add('highlight');
-            // Remove the highlight after the animation to allow it to trigger again
-            setTimeout(() => {
-                areaElement.classList.remove('highlight');
-            }, 500);
+        // Import the date/time updater utility
+        const { setStaticDateTime } = require('./utils/dateTime');
+
+        // Set static date and time for now (for consistent look)
+        setStaticDateTime('2025-08-28', '15:25:07');
+
+        // Set current user display
+        document.getElementById('current-user').textContent = 'tarikorg';
+        document.getElementById('username').textContent = 'tarikorg';
+
+
+        // Format text content
+        function formatContent(content) {
+            if (!content) return "None";
+            return content.replace(/\n/g, '<br>');
+        }
+
+        // Tab switching
+        document.querySelectorAll('.tab-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all tabs
+                document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+
+                // Add active class to clicked tab
+                button.classList.add('active');
+                document.getElementById(button.dataset.tab).classList.add('active');
+            });
         });
 
-        //toggle
-        document.getElementById('toggle-overlay').addEventListener('click', () => {
-            window.electronAPI.toggleOverlay();
-        })
+        // Handle area changes
+        window.electronAPI.onAreaChanged((areaName, mapInfo) => {
+            // Update area name
+            document.getElementById('area-name').textContent = areaName;
+
+            // Update guide text
+            document.getElementById('guide-text').innerHTML = formatContent(mapInfo.guide);
+
+            // Update rewards text
+            document.getElementById('rewards-text').innerHTML = formatContent(mapInfo.rewards);
+
+            // Update layout images
+            const imagesContainer = document.getElementById('layout-images');
+            imagesContainer.innerHTML = '';
+
+            if (Array.isArray(mapInfo.layoutImage) && mapInfo.layoutImage.length) {
+                mapInfo.layoutImage.forEach((img, index) => {
+                    const imgWrapper = document.createElement('div');
+                    imgWrapper.className = 'image-thumbnail';
+
+                    const imgElement = document.createElement('img');
+                    imgElement.src = `app://assets/maps/${img}`;
+                    imgElement.alt = `Layout ${index + 1}`;
+                    imgElement.className = 'layout-img';
+
+                    // Add click handler to open in image overlay
+                    imgElement.addEventListener('click', () => {
+                        window.electronAPI.openImageInOverlay(`app://assets/maps/${img}`);
+
+                        // Also make sure the image overlay is visible
+                        document.getElementById('image-overlay-toggle').checked = true;
+                        window.electronAPI.toggleOverlay('image');
+                    });
+
+                    imgWrapper.appendChild(imgElement);
+                    imagesContainer.appendChild(imgWrapper); // Fixed: Use imgWrapper, not imgElement
+                });
+            } else {
+                imagesContainer.innerHTML = '<div class="no-images">No images available</div>';
+            }
+        });
+
+        // Timer controls
+        document.getElementById('start-timer').addEventListener('click', () => {
+            window.electronAPI.timerAction('start');
+        });
+
+        document.getElementById('pause-timer').addEventListener('click', () => {
+            window.electronAPI.timerAction('pause');
+        });
+
+        document.getElementById('reset-timer').addEventListener('click', () => {
+            window.electronAPI.timerAction('reset');
+        });
+
+        // Overlay toggles
+        document.getElementById('area-overlay-toggle').addEventListener('change', function () {
+            window.electronAPI.toggleOverlay('area');
+        });
+
+        document.getElementById('timer-overlay-toggle').addEventListener('change', function () {
+            window.electronAPI.toggleOverlay('timer');
+        });
+
+        document.getElementById('image-overlay-toggle').addEventListener('change', function () {
+            window.electronAPI.toggleOverlay('image');
+        });
+
+        // Listen for overlay visibility changes from the main process
+        window.electronAPI.onOverlayVisibilityChanged((overlayType, isVisible) => {
+            document.getElementById(`${overlayType}-overlay-toggle`).checked = isVisible;
+        });
+
+        // Settings opacity sliders
+        document.querySelectorAll('input[type="range"]').forEach(slider => {
+            slider.addEventListener('input', function () {
+                const valueDisplay = document.getElementById(`${this.id}-value`);
+                if (valueDisplay) {
+                    valueDisplay.textContent = this.value;
+                }
+            });
+        });
+
+        // Apply settings buttons
+        document.querySelectorAll('.apply-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const target = this.dataset.target;
+                const opacity = parseFloat(document.getElementById(`${target}-opacity`).value);
+
+                window.electronAPI.updateOverlaySettings(target, { opacity });
+            });
+        });
     </script>
 </body>
 
