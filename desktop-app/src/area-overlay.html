@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self'; img-src 'self' app:;"> -->
+    <link rel="stylesheet" href="overlay-styles.css">
+</head>
+
+<body class="area-overlay">
+    <div class="overlay-box area-overlay-box">
+        <div class="overlay-header">
+            <div class="area-title" id="area-name">Waiting...</div>
+            <div class="overlay-controls">
+                <button class="overlay-btn" id="drag-handle" title="Drag to move">↕</button>
+                <button class="overlay-btn" id="settings-btn" title="Overlay Settings">⚙</button>
+            </div>
+        </div>
+
+        <div class="overlay-content">
+            <div class="guide" id="guide"></div>
+            <div class="rewards" id="rewards"></div>
+            <div class="poi" id="poi"></div>
+            <div class="protip" id="protip"></div>
+            <div class="boss" id="boss"></div>
+        </div>
+
+        <div class="layout-images" id="images"></div>
+
+        <div class="overlay-settings" id="settings-panel" style="display: none;">
+            <h3>Overlay Settings</h3>
+            <div class="settings-row">
+                <label>Opacity:</label>
+                <input type="range" id="opacity-slider" min="0.1" max="1" step="0.1" value="0.9">
+                <span id="opacity-value">0.9</span>
+            </div>
+            <div class="settings-row">
+                <label>Width:</label>
+                <input type="number" id="width-input" min="200" max="800" value="420">
+            </div>
+            <div class="settings-row">
+                <label>Height:</label>
+                <input type="number" id="height-input" min="200" max="800" value="520">
+            </div>
+            <div class="settings-row buttons">
+                <button id="apply-settings">Apply</button>
+                <button id="close-settings">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Format text content
+        function format(content) {
+            if (!content) return null;
+            return content.replace(/\n/g, '<br>');
+        }
+
+        // Handle area changes
+        window.overlayAPI.onAreaChanged((area, info) => {
+            document.getElementById('area-name').textContent = area;
+
+            document.getElementById('guide').innerHTML = info.guide
+                ? `<h3>Guide:</h3><div class="content">${format(info.guide)}</div>`
+                : '';
+
+            document.getElementById('rewards').innerHTML = info.rewards
+                ? `<h3>Rewards:</h3><div class="content">${format(info.rewards)}</div>`
+                : '';
+
+            document.getElementById('poi').innerHTML = info.pointsOfInterest
+                ? `<h3>Points of Interest:</h3><div class="content">${format(info.pointsOfInterest)}</div>`
+                : '';
+
+            document.getElementById('protip').innerHTML = info.proTip
+                ? `<h3>Pro Tip:</h3><div class="content">${format(info.proTip)}</div>`
+                : '';
+
+            document.getElementById('boss').innerHTML = info.bossReward
+                ? `<h3>Boss Reward:</h3><div class="content">${format(info.bossReward)}</div>`
+                : '';
+
+            // Layout images support (array of images)
+            const imagesDiv = document.getElementById('images');
+            imagesDiv.innerHTML = '';
+
+            if (Array.isArray(info.layoutImage) && info.layoutImage.length) {
+                info.layoutImage.forEach((img, index) => {
+                    const imgWrapper = document.createElement('div');
+                    imgWrapper.className = 'image-thumbnail';
+
+                    const imgElement = document.createElement('img');
+                    imgElement.src = `app://assets/maps/${img}`;
+                    imgElement.alt = `Layout ${index + 1}`;
+                    imgElement.className = 'layout-img';
+
+                    // Add click handler to open in image overlay
+                    imgElement.addEventListener('click', () => {
+                        window.overlayAPI.openImageInOverlay(`app://assets/maps/${img}`);
+                    });
+
+                    imgWrapper.appendChild(imgElement);
+                    imagesDiv.appendChild(imgWrapper);
+                });
+            }
+        });
+
+        // Drag functionality
+        document.getElementById('drag-handle').addEventListener('mousedown', (e) => {
+            window.overlayAPI.startDrag('area', { x: e.screenX, y: e.screenY });
+        });
+
+        // Settings panel toggle
+        document.getElementById('settings-btn').addEventListener('click', () => {
+            const panel = document.getElementById('settings-panel');
+            if (panel.style.display === 'none') {
+                panel.style.display = 'block';
+            } else {
+                panel.style.display = 'none';
+            }
+        });
+
+        // Settings controls
+        document.getElementById('opacity-slider').addEventListener('input', function () {
+            document.getElementById('opacity-value').textContent = this.value;
+        });
+
+        document.getElementById('apply-settings').addEventListener('click', () => {
+            const opacity = parseFloat(document.getElementById('opacity-slider').value);
+            const width = parseInt(document.getElementById('width-input').value);
+            const height = parseInt(document.getElementById('height-input').value);
+
+            window.overlayAPI.updateSettings('area', { opacity, width, height });
+            document.getElementById('settings-panel').style.display = 'none';
+        });
+
+        document.getElementById('close-settings').addEventListener('click', () => {
+            document.getElementById('settings-panel').style.display = 'none';
+        });
+
+        // Request current area on load
+        window.overlayAPI.requestCurrentArea();
+    </script>
+</body>
+
+</html>

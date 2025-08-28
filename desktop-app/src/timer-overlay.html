@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';"> -->
+    <link rel="stylesheet" href="overlay-styles.css">
+</head>
+
+<body class="timer-overlay">
+    <div class="overlay-box timer-overlay-box">
+        <div class="overlay-header timer-header">
+            <div class="timer-title" id="timer-area">Speedrun Timer</div>
+            <div class="overlay-controls">
+                <button class="overlay-btn" id="drag-handle" title="Drag to move">↕</button>
+                <button class="overlay-btn" id="settings-btn" title="Overlay Settings">⚙</button>
+            </div>
+        </div>
+
+        <div class="timer-display">
+            <div class="timer" id="timer">00:00:00</div>
+            <div class="timer-controls">
+                <button id="start-btn" class="timer-btn">Start</button>
+                <button id="pause-btn" class="timer-btn">Pause</button>
+                <button id="reset-btn" class="timer-btn">Reset</button>
+            </div>
+        </div>
+
+        <div class="overlay-settings" id="settings-panel" style="display: none;">
+            <h3>Timer Overlay Settings</h3>
+            <div class="settings-row">
+                <label>Opacity:</label>
+                <input type="range" id="opacity-slider" min="0.1" max="1" step="0.1" value="0.9">
+                <span id="opacity-value">0.9</span>
+            </div>
+            <div class="settings-row">
+                <label>Width:</label>
+                <input type="number" id="width-input" min="150" max="500" value="240">
+            </div>
+            <div class="settings-row">
+                <label>Height:</label>
+                <input type="number" id="height-input" min="70" max="200" value="70">
+            </div>
+            <div class="settings-row buttons">
+                <button id="apply-settings">Apply</button>
+                <button id="close-settings">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let startTime = 0;
+        let elapsedTime = 0;
+        let timerInterval = null;
+        let timerRunning = false;
+        const timerElement = document.getElementById('timer');
+
+        // Format time as HH:MM:SS.ms
+        function formatTime(ms) {
+            const date = new Date(ms);
+            const hours = String(date.getUTCHours()).padStart(2, '0');
+            const minutes = String(date.getUTCMinutes()).padStart(2, '0');
+            const seconds = String(date.getUTCSeconds()).padStart(2, '0');
+            return `${hours}:${minutes}:${seconds}`;
+        }
+
+        // Update timer display
+        function updateTimer() {
+            const currentTime = Date.now();
+            const timeToDisplay = startTime ? currentTime - startTime + elapsedTime : elapsedTime;
+            timerElement.textContent = formatTime(timeToDisplay);
+        }
+
+        // Start the timer
+        function startTimer() {
+            if (!timerRunning) {
+                timerRunning = true;
+                startTime = Date.now();
+                timerInterval = setInterval(updateTimer, 100);
+                document.getElementById('start-btn').disabled = true;
+                document.getElementById('pause-btn').disabled = false;
+            }
+        }
+
+        // Pause the timer
+        function pauseTimer() {
+            if (timerRunning) {
+                timerRunning = false;
+                clearInterval(timerInterval);
+                elapsedTime += Date.now() - startTime;
+                startTime = 0;
+                document.getElementById('start-btn').disabled = false;
+                document.getElementById('pause-btn').disabled = true;
+            }
+        }
+
+        // Reset the timer
+        function resetTimer() {
+            pauseTimer();
+            elapsedTime = 0;
+            updateTimer();
+        }
+
+        // Handle timer actions from main window
+        window.timerOverlayAPI.onTimerAction((action) => {
+            switch (action) {
+                case 'start':
+                    startTimer();
+                    break;
+                case 'pause':
+                    pauseTimer();
+                    break;
+                case 'reset':
+                    resetTimer();
+                    break;
+                case 'toggle':
+                    if (timerRunning) {
+                        pauseTimer();
+                    } else {
+                        startTimer();
+                    }
+                    break;
+            }
+        });
+
+        // Handle area changes
+        window.timerOverlayAPI.onAreaChanged((area) => {
+            document.getElementById('timer-area').textContent = area;
+        });
+
+
+
+        // Attach event listeners
+        document.getElementById('start-btn').addEventListener('click', startTimer);
+        document.getElementById('pause-btn').addEventListener('click', pauseTimer);
+        document.getElementById('reset-btn').addEventListener('click', resetTimer);
+
+        // Disable pause button initially
+        document.getElementById('pause-btn').disabled = true;
+
+        // Drag functionality
+        document.getElementById('drag-handle').addEventListener('mousedown', (e) => {
+            window.timerOverlayAPI.startDrag('timer', { x: e.screenX, y: e.screenY });
+        });
+
+        // Settings panel toggle
+        document.getElementById('settings-btn').addEventListener('click', () => {
+            const panel = document.getElementById('settings-panel');
+            if (panel.style.display === 'none') {
+                panel.style.display = 'block';
+            } else {
+                panel.style.display = 'none';
+            }
+        });
+
+        // Settings controls
+        document.getElementById('opacity-slider').addEventListener('input', function () {
+            document.getElementById('opacity-value').textContent = this.value;
+        });
+
+        document.getElementById('apply-settings').addEventListener('click', () => {
+            const opacity = parseFloat(document.getElementById('opacity-slider').value);
+            const width = parseInt(document.getElementById('width-input').value);
+            const height = parseInt(document.getElementById('height-input').value);
+
+            window.timerOverlayAPI.updateSettings('timer', { opacity, width, height });
+            document.getElementById('settings-panel').style.display = 'none';
+        });
+
+        document.getElementById('close-settings').addEventListener('click', () => {
+            document.getElementById('settings-panel').style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>

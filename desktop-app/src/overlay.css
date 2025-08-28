@@ -1,44 +1,52 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: transparent;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: transparent;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-.overlay-container {
-    width: 100%;
-    height: 100%;
+.overlay-box {
+    background: rgba(16, 16, 24, 0.92);
+    border: 2px solid #e94560;
+    border-radius: 10px;
+    padding: 14px 18px;
+    width: 380px;
+    min-height: 260px;
+    color: #e0e0e0;
+    box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.7);
+}
+
+.area-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 8px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.guide,
+.rewards,
+.poi,
+.protip,
+.boss {
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+.layout-images {
     display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 8px;
 }
 
-.area-box {
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 6px;
-    padding: 10px 15px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.area-label {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.7);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
-}
-
-#overlay-area-name {
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-#overlay-area-name.highlight {
-    color: #4eff8a;
-    text-shadow: 0 0 8px rgba(78, 255, 138, 0.7);
+.layout-img {
+    max-width: 110px;
+    max-height: 90px;
+    border-radius: 5px;
+    border: 1.5px solid #444;
+    background: #121212;
 }

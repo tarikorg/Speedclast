@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.overlay-box {
+    background-color: rgba(16, 24, 36, 0.92);
+    border: 2px solid #e94560;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: rgba(233, 69, 96, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.area-title,
+.timer-title {
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.overlay-controls {
+    display: flex;
+    gap: 4px;
+}
+
+.overlay-btn {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.2s;
+    padding: 0;
+}
+
+.overlay-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Area Overlay Specific Styles */
+.overlay-content {
+    padding: 10px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.guide,
+.rewards,
+.poi,
+.protip,
+.boss {
+    margin-bottom: 10px;
+}
+
+.guide h3,
+.rewards h3,
+.poi h3,
+.protip h3,
+.boss h3 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    color: #e94560;
+}
+
+.content {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.layout-images {
+    display: flex;
+    gap: 5px;
+    padding: 8px;
+    overflow-x: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.image-thumbnail {
+    flex: 0 0 auto;
+}
+
+.layout-img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.layout-img:hover {
+    transform: scale(1.05);
+    border-color: #e94560;
+}
+
+/* Image Overlay Specific Styles */
+.image-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#main-image {
+    max-width: 100%;
+    max-height: 100%;
+    transform-origin: center;
+    transition: transform 0.1s ease-out;
+    cursor: grab;
+}
+
+/* Timer Overlay Specific Styles */
+.timer-overlay-box {
+    background-color: rgba(16, 24, 36, 0.88);
+}
+
+.timer-header {
+    padding: 5px 12px;
+}
+
+.timer-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+.timer {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    font-weight: bold;
+    color: #50fa7b;
+    text-shadow: 0 0 10px rgba(80, 250, 123, 0.5);
+}
+
+.timer-controls {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.timer-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 2px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.timer-btn:hover:not(:disabled) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.timer-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Settings Panel */
+.overlay-settings {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background-color: rgba(30, 30, 45, 0.95);
+    border: 1px solid rgba(233, 69, 96, 0.5);
+    border-radius: 6px;
+    padding: 15px;
+    width: 220px;
+    z-index: 100;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.overlay-settings h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #e94560;
+    text-align: center;
+}
+
+.settings-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.settings-row label {
+    flex: 0 0 80px;
+    font-size: 14px;
+}
+
+.settings-row input[type="range"] {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.settings-row input[type="number"] {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.settings-row.buttons {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.settings-row button {
+    background-color: rgba(233, 69, 96, 0.7);
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.settings-row button:hover {
+    background-color: rgba(233, 69, 96, 0.9);
+}
