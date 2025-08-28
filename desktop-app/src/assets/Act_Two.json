@@ -1,0 +1,130 @@
+{
+  "Vastiri Outskirts": {
+    "guide": "1. Hug the inside wall after leaving the town area that corresponds with the direction in which the town \"leans\" (eg. Hug the right hand wall if the town leans right, hug the left hand wall if the town leans left)\n2. Continue until you find a narrow canyon that leads to the boss room",
+    "bossReward": null,
+    "rewards": "+2 Weapon Specialisation Skill Points",
+    "pointsOfInterest": null,
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "Mawdun Quarry": {
+    "guide": "When in doubt, hug a wall.",
+    "bossReward": null,
+    "rewards": null,
+    "pointsOfInterest": null,
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "Mawdun Mine": {
+    "guide": "if you keep moving upward in a Northerly direction, you will find the boss without problems.",
+    "bossReward": null,
+    "rewards": null,
+    "pointsOfInterest": null,
+    "proTip": "This boss can deal a ton of damage, so try to get your Fire Resistance as high as possible for this fight and pay attention when she starts swinging her bombs at you!",
+    "layoutImage": ""
+  },
+  "Traitor's Passage": {
+    "guide": "1. From the entrance, head in the opposite direction you came in and use that direction as a weak guiding light to find The Halani Gates\n2. Find the Lore Book and follow the yellow paper seals to find Balbala if you want to complete your Ascendancy now\n3. Continue on in the same direction you were moving before (often in the opposite direction the yellow paper seals guided you) until you find The Halani Gates",
+    "bossReward": null,
+    "rewards": "Djinn Barya that will allow you to complete your first Ascendancy",
+    "pointsOfInterest": "yellow paper seals on the walls",
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "Halani Gates": {
+    "guide": "if you just head in the opposite direction in which you came and follow the bridges, you'll find the boss arena and exit very easily.",
+    "bossReward": null,
+    "rewards": null,
+    "pointsOfInterest": null,
+    "proTip": "The boss in this area deals high amounts of Lightning Damage so try to get your Lightning Resistance above 50% to not die! If you have one, equip a Topaz Charm for this fight",
+    "layoutImage": ""
+  },
+  "Keth": {
+    "guide": "1. Run one of the outside edges of the zone and keep a look out for the Venom Pit to slay Kabala. If you don't locate her along the way, continue until you find the Exit Tile\n2. Tag the Checkpoint at the Exit tile and take it back to the Checkpoint at the start of the area\n3. From here, run the other outside edge and keep a look out for Kabala's arena. If you don't locate it, Respawn at Checkpoint\n4. From the Waypoint Checkpoint, check the other two top spots above",
+    "bossReward": null,
+    "rewards": "+2 Weapon Specialisation Skill Points",
+    "pointsOfInterest": "The checkpoint for Kabala is always found next to the top of a large, partially buried rounded building and a fairly obvious set of shapes on the minimap that looks like an angry face",
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "The Lost City": {
+    "guide": "1. Check one of the corners of the first rectangle you spawn in for the V-Bridge. If you don't find it, run along the wall to the opposite side where it will spawn. Cross the V-bridge\n2. Run to the far wall of the second \"rectangle\" and check the edge until it opens up into the exit tile - it will spawn somewhere along this wall.",
+    "bossReward": null,
+    "rewards": "Level 6/7 Uncut Spirit Gem",
+    "pointsOfInterest": "Sarcophagus in the Lost City that you can open for a Level 6/7 Uncut Spirit Gem",
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "Buried Shrines": {
+    "guide": "If you cross one of the bridges from South to North and move in an upward direction (toward the top of your screen), you will find the boss tile at the most Northerly point of the area.\nIf you cross one of the bridges from the North to the South and move in a downward direction (toward the bottom of your screen), you will find the boss tile in an East-facing position",
+    "bossReward": null,
+    "rewards": "Magic Resistance Ring",
+    "pointsOfInterest": "Elemental Offering",
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "Mastodon Badlands": {
+    "guide": "Currently, the best way to get through this area is to just hug a wall and follow it until you find the exit.",
+    "bossReward": null,
+    "rewards": "guaranteed Uncut Support Gem Level 1 in Normal Difficulty and a Level 13 Uncut Skill Gem in Cruel",
+    "pointsOfInterest": "Effigy in this area beside a Checkpoint that can be clicked for a guaranteed Uncut Support Gem Level 1 in Normal Difficulty and a Level 13 Uncut Skill Gem in Cruel",
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "The Bone Pits": {
+    "guide": "After passing through the bone arch at the start of the area, continue in that same direction until you meet the opposite wall and try to find the opening to the boss room.",
+    "bossReward": null,
+    "rewards": null,
+    "pointsOfInterest": null,
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "Valley of the Titans": {
+    "guide": "1. Find the sealed Titan Grotto Entrance. This is usually located in a fairly obvious straight line after entering the area. You'll know you're near it when your camera starts to zoom out slightly and you see a Checkpoint with a Red Hand icon on your minimap\n2. Run the outside edge of the area, tagging the Ancient Seals you find along the way (next to Checkpoints)\n3. If you find all three Seals, take the Checkpoint to the Titan Grotto and enter. If not, run the outside edge of the middle gorge to locate the final Seal",
+    "bossReward": null,
+    "rewards": "permanent buff",
+    "pointsOfInterest": "Ancient Seals",
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "The Titan Grotto": {
+    "guide": "If you make you way from the starting area to the opposite side of the \"rectangle\", you'll find Zalmarath fairly comfortably. Even though there will be many twists and turns, use this concept as your compass to find the other side.",
+    "bossReward": null,
+    "rewards": null,
+    "pointsOfInterest": null,
+    "proTip": "Staying close to him in a 12 o'clock position for his first phase, and 3 o'clock position for his second phase, can help ensure you aren't killed by his slam attacks. Also be aware of the mobs he spawns as they can be quite deadly too!",
+    "layoutImage": ""
+  },
+  "Deshar": {
+    "guide": "In order to find the entrance to the Path of Mourning, continue traveling in the opposite direction from the entrance until you make it to the furthest-most edge of the second area with buildings.",
+    "bossReward": null,
+    "rewards": "+2 Weapon Specialisation Points.",
+    "pointsOfInterest": "Fallen Dekhara Warrior",
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "Path of Mourning": {
+    "guide": "if you travel to the opposite side of the area, you'll likely find the exit.",
+    "bossReward": null,
+    "rewards": null,
+    "pointsOfInterest": null,
+    "proTip": null,
+    "layoutImage": ""
+  },
+  "The Spires of Deshar": {
+    "guide": "From the entrance, make your way to the direct opposite end of the area and locate the Checkpoint to Tor Gul's boss arena.",
+    "bossReward": null,
+    "rewards": "+10% to Lightning Resistance",
+    "pointsOfInterest": "Sisters of Garukhan",
+    "proTip": "Clicking Sisters of Garukhan will spawn swarms of enemies that deal lightning damage on all platforms. This can make the area very hard to run, so it's recommended you first find the checkpoint for Tor Gul first so you don't have to deal with these monsters while trying to find the boss room.",
+    "layoutImage": ""
+  },
+  "The Dreadnought & Dreadnought Vanguard": {
+    "guide": "From the entrance, continue in the opposite direction and keep going until you find the other end.",
+    "bossReward": null,
+    "rewards": null,
+    "pointsOfInterest": null,
+    "proTip": null,
+    "layoutImage": ""
+  }
+}

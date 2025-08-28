@@ -1,0 +1,114 @@
+{
+  "Sandswept Marsh": {
+    "guide": "From the start of the area, establish the orientation of the map by paying attention to the direction in which you leave the small area with the Waypoint, Zarka and The Hooded One. Continue in the direction you exit the starting area until you hit the opposite far wall and then run along it until you find the Ziggurat Encampment entrance. Grab the Checkpoint but don't go in yet. From the Ziggurat Encampment entrance, continue running along the wall it spawns on, checking both sides until you find the Azak Campfire. Defeat the Rare enemies here and collect the Lesser Jeweller's Orb from the chest they're guarding.",
+    "bossReward": null,
+    "rewards": "Lesser Jeweller's Orb, Level 9 Uncut Skill Gem, Magic Ring",
+    "pointsOfInterest": "Ziggurat Encampment: found on the opposite side of the area from the entrance, Azak Campfire: found to the left or right of the Ziggurat Encampment entrance. Chest drops a Lesser Jeweller's Orb. You'll know you've found this area when you see a Checkpoint beside several huts covered in large, green leaves., Foul Ritual: Rootdredge, a large Unique miniboss can be slain for a Level 9 Uncut Skill Gem. This is usually found in the middle of the first third of the area, Hanging Tree: there is a large tree with a hanging corpse that can be clicked to obtain a Magic Ring.",
+    "proTip": "Especially on league start, Azak Campfire is a major damage or utility upgrade, so don't forget it.",
+    "layoutImage": ""
+  },
+  "Jungle Ruins": {
+    "guide": "Instead of running straight into the middle of the zone, follow one of the walls from the entrance and make your way to the opposite side of the area, hoping to stumble upon the Venom Crypts or Might Silverfist along the way. Once arriving at the opposite end of the area, run along the topside wall until you find the Checkpoint leading you into Infested Barrens. If you found the Venom Crypts and Mighty Silverfist on your way here, continue to the Infested Barrens, otherwise: Run slightly away from the wall and scan back and forth for the other important points of interest. If you don't find them in this top third of the area and find yourself blocked off, it's worth taking the Checkpoint at the start of the area to check from there. If you are still unlucky enough to have not found what you're looking for, keep scanning and hoping. After finding the Waypoint beside the Venom Crypts, instead of going in immediately, take the Checkpoint to the Infested Barrens entrance, go in, get the Waypoint there and take it back to Jungle Valley and enter the Venom Crypts if you've taken care of Silverfist, otherwise search for him, slay him and take his Checkpoint back to the Venom Crypts.",
+    "bossReward": null,
+    "rewards": "Permanent Buff, +2 Weapon Set Skill Points, Rare Rawhide or Linen Belt",
+    "pointsOfInterest": "Entrance to Infested Barrens: this can be found on the opposite wall from where you enter the zone, The Venom Crypts and Waypoint: This is an area inside which you will find a quest item that grants your character a Permanent Buff. It seems to be able to spawn in one of 9 locations, fairly evenly spaced apart, Mighty Silverfist: This unique Boss should be slain to acquire the Book of Specialisation that he drops, which will grant your character +2 Weapon Set Skill Points. His arena most often spawns in the top third of the area, but occasionally also spawns in the middle, Jungle Grave: Summon Servi to complete this quest to receive a Rare Rawhide or Linen Belt, Troubled Camp: Gwendolyn Albright can be found and traded with in this area. Check her for upgrades if you find her",
+    "proTip": "Even though this area is extremely large, it can be navigated more quickly than expected with some guidance.",
+    "layoutImage": ""
+  },
+  "Infested Barrens": {
+    "guide": "Run the outside edge and tag each of the Checkpoints before entering any of the areas. Make sure to also collect the Waypoints for later. Take the Checkpoint to the Azak Bog and complete the area before taking the Waypoint back to the Infested Barrens. Take the Checkpoint back to the Chimeral Wetlands and continue on. If you feel you are too slow and are worried about the Infested Barrens instance closing before you can finish the Azak Bog, instead travel to the Chimeral Wetlands, tag the Waypoint and then take it back to Infested Barrens and continue the route stated above",
+    "bossReward": null,
+    "rewards": null,
+    "pointsOfInterest": "Chimeral Wetlands: Found on the outside edge of the area with no major environment clues beside it, Azak Bog: Found at the end of a long bridge, preceded by a Checkpoint, The Matlan Waterways: Found beside the Waypoint, Summon Alva and a Checkpoint",
+    "proTip": "Each important Checkpoint can be found along the outside edge of the area, so it makes sense to run along the side walls instead of entering the middle of the area",
+    "layoutImage": ""
+  },
+  "Azak Bog": {
+    "guide": "Ignagduk, the Bog Witch seems to spawn in the top right quadrant of this area. If you imagine this area as a square broken up into four, equally sized blocks, she will spawn in the top right one.",
+    "bossReward": null,
+    "rewards": "+30 to Maximum Spirit as a permanent buff in Normal and +40 in Cruel",
+    "pointsOfInterest": "Ignagduk, the Bog Witch seems to spawn in the top right quadrant of this area",
+    "proTip": "Azak Bog is one of the most disliked areas because of its size and narrow pathways. Luckily, there seems to be a fairly easy way to locate the boss",
+    "layoutImage": ""
+  },
+  "Chimeral Wetlands": {
+    "guide": "Hug the outside wall of the area and follow it until you find whichever point of interest you're looking for. If you find the Xyclucean Arena first, you can always enter Jinquani's Machinarium and tag the Waypoint and then take it back to this area to find The Temple of Chaos",
+    "bossReward": null,
+    "rewards": null,
+    "pointsOfInterest": "Jinquani's Machinarium Entrance/Xyclucean Arena: Always faces to the left/West. In Softcore leagues, it seemed that hugging the left wall from the entrance made it easiest to find this, but running the same zone in SSF, the opposite was true, despite this arena having the same orientation, The Temple of Chaos: seemingly always found at the top of the area in a directly North-facing direction",
+    "proTip": "Although the position of these two points of interest change, their orientation appears to be static in that they always face the same direction",
+    "layoutImage": ""
+  },
+  "Jiquani's Machinarium": {
+    "guide": "This small first section has a central room with Alva and two side areas. In one of the side areas to the left or right, you'll find the first Small Soul Core that opens the door beside Alva. There currently aren't any clues to know which side this Core spawns on, but your loot filter may be able to help alert you to the presence of one when you enter its vacinity. The second section of this area has a large central corridor and several side rooms in which you can locate additional Soul Cores to open other doors in the area.",
+    "bossReward": null,
+    "rewards": "+10% to Fire Resistance",
+    "pointsOfInterest": "Entrance to Jiquani's Sanctum: pay attention to the direction in which you entered the area. If you draw a straight line from the start of the second section, you'll find the final passage that leads you to Jiquani's Sanctum, Blackjaw, the Remnant: this optional boss can be slain for a permanent boost of +10% to Fire Resistance in Normal and Cruel difficulties. This boss seemingly spawns on the far left or right of the area",
+    "proTip": "Jiquani's Machinarium has two sections in which you'll need to locate Small Soul Cores to open sets of doors to proceed.",
+    "layoutImage": ""
+  },
+  "Jiquani's Sanctum": {
+    "guide": "In each of the large sections, you'll find a Generator toward the back end of the area. The Medium Soul Cores will spawn randomly throughout the Sanctum, so keep your eyes and ears peeled for them. After activating the first Generator, run to the second and keep a look out for another Medium Soul Core along the way. If you don't find one, here's a speedrunner pro tip: Instead of scouring the rest of the area for the final Soul Core, tag the Checkpoint by the Generator and press Esc and then Respawn at Checkpoint. The Soul Core has a chance of spawning very close to the Generator and will appear on your minimap as a green exclamation mark (!). After defeating Zicoatl, return to the Infested Barrens with the Large Soul Core to open the way to The Matlan Waterways.",
+    "bossReward": null,
+    "rewards": "Large Soul Core",
+    "pointsOfInterest": "Generator, Medium Soul Core",
+    "proTip": "Jiquani's Sanctum has a very set layout with two areas that are almost perfectly mirrored. In each section, you'll need to locate a Generator and a Medium Soul Core to power each one. Activating each of these will power the boss of the area and grant you a Large Soul Core which you'll need to unlock The Matlan Waterways",
+    "layoutImage": ""
+  },
+  "The Matlan Waterways": {
+    "guide": "There isn't much to say about The Matlan Waterways due to the nature of the area. You'll be unable to proceed until you pull the correct Lever that lowers the water to the next platform. Try to have a decent amount of Fire Resistance at the very least for this area and take your time to avoid too many unnecessary deaths.",
+    "bossReward": null,
+    "rewards": null,
+    "pointsOfInterest": "Lever",
+    "proTip": "You'll be unable to proceed until you pull the correct Lever that lowers the water to the next platform.",
+    "layoutImage": ""
+  },
+  "The Drowned City": {
+    "guide": "Tag the Waypoint and continue in a Northeast direction (or to your character's left from the entrance). Continue until you hit a wall and turn right until you see that e the area opens up again to your character's left. You'll find a Checkpoint and an opening where you will be ambushed by monsters. Continue past the ambush, turn right before turning left and in a Northerly direction to find the Apex of Filth past the Checkpoint",
+    "bossReward": null,
+    "rewards": "Reforging Bench",
+    "pointsOfInterest": "The Molten Vault which can be completed to unlock the Reforging Bench. You can find this area by turning left instead of right after the ambush section.",
+    "proTip": "It's very much worth learning the route in this area because it is identical to the Utzaal area you need to run later -- that's because it's the same place, but in a different time period.",
+    "layoutImage": ""
+  },
+  "Apex of Filth": {
+    "guide": "From the entrance, tag the Waypoint and pick a direction. The area will open up to either the left or right, with one end being a dead-end wall. Once you've found the correct path, continue in that direction until the area opens up and you see long, narrow causeways next to water with small bridges connecting the two sides. Continue along this straight pathway until you can't anymore and turn to the direction in which you came in originally. Continue down before being forced back in the opposite direction from the straight section. Keep going until you find the Checkpoint and the entrance to the boss room",
+    "bossReward": null,
+    "rewards": null,
+    "pointsOfInterest": "Checkpoint, entrance to the boss room",
+    "proTip": "If you run the zone in a spiral, you'll find the boss very reliably, but knowing when and where to turn is the tricky part that might take a small amount of practice",
+    "layoutImage": ""
+  },
+  "Temple of Kopec": {
+    "guide": "Unfortunately, there currently isn't a way to know in which of the corners the entrance will spawn, at least on the first floor. Check each of the corners and proceed up once you find the door. On the second floor, occasionally you will find an impassable rift separating two sections of the triangle. If you find this, the entrance to the boss arena is in the same direction that you cross it. If you don't encounter this rift, check the last two corners to find the way up to the boss room.",
+    "bossReward": null,
+    "rewards": null,
+    "pointsOfInterest": "entrance to the next floor",
+    "proTip": "Temple of Kopec has a triangle layout with the entrance to the next floor in one of the three corners.",
+    "layoutImage": ""
+  },
+  "Utzaal": {
+    "guide": "In this area you'll need to defeat Viper Napuatzi who spawns where the ambush occurred in The Drowned City. You'll notice that the path leading up to her arena has a set of distinctive, flat stone blocks. After defeating her, turn to the right and then the left. Just past the Checkpoint, you'll find the way up to Aggorat.",
+    "bossReward": "Viper Napuatzi",
+    "rewards": null,
+    "pointsOfInterest": "Viper Napuatzi, Checkpoint",
+    "proTip": "Utzaal has the same layout as The Drowned City because it is the same place, but in the past. Spend 10 minutes running this area with the diagram open and it will make complete sense.",
+    "layoutImage": ""
+  },
+  "Aggorat": {
+    "guide": "From the entrance head up and try to find the large platform, full of Vaal worshipping Atziri. You'll hear the distinctive Atziri, Atziri sound as you approach. This worship platform is a long flat area with narrow pathways running alongside it. Run onto the worship platform, and continue in the same direction until you find an arch with an opening with a Checkpoint on the other side. From the Checkpoint, the area will open up either to the left or right, with the incorrect direction being a dead end. Go that way then make an immediate turn up in the direction you've been going since the entrance. Continue going until you find a flat path with a Checkpoint on it that will lead you to a long staircase to The Black Chambers",
+    "bossReward": null,
+    "rewards": "+2 Weapon Set Skill Points",
+    "pointsOfInterest": "Sacrificial Dagger to stab the Sacrificial Heart for +2 Weapon Set Skill Points. In current iterations of this area, this seems to spawn in the same place, to the right of the entrance to The Black Chambers",
+    "proTip": "As with many areas in Act 3, Aggorat has a fairly set and distinctive layout that can be learned with minimal effort.",
+    "layoutImage": ""
+  },
+  "The Black Chambers": {
+    "guide": "From the entrance, head either left or right and then up until you find the first bridge. Continue in that direction, weaving in and out of rooms until you find a Checkpoint next to the second major bridge. From there, you'll be crossing more bridges that form as your approach them - try to stay in the middle of the area, keeping the entrance in mind as a guide for the centre line of the zone. Continue up until you find a Checkpoint that leads you to Doryani",
+    "bossReward": "Doryani",
+    "rewards": null,
+    "pointsOfInterest": "Checkpoint, Doryani's arena",
+    "proTip": "The Black Chambers has a fairly set layout and can be simplified by thinking of it as three major sections separated by bridges, with Doryani's arena on the opposite side from the entrance",
+    "layoutImage": ""
+  }
+}

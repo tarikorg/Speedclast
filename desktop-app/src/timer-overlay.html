@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self';"> -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
     <link rel="stylesheet" href="overlay-styles.css">
 </head>
 
@@ -79,6 +79,7 @@
                 timerInterval = setInterval(updateTimer, 100);
                 document.getElementById('start-btn').disabled = true;
                 document.getElementById('pause-btn').disabled = false;
+                console.log("Timer started");
             }
         }
 
@@ -91,6 +92,7 @@
                 startTime = 0;
                 document.getElementById('start-btn').disabled = false;
                 document.getElementById('pause-btn').disabled = true;
+                console.log("Timer paused");
             }
         }
 
@@ -99,10 +101,12 @@
             pauseTimer();
             elapsedTime = 0;
             updateTimer();
+            console.log("Timer reset");
         }
 
         // Handle timer actions from main window
         window.timerOverlayAPI.onTimerAction((action) => {
+            console.log("Timer action received:", action);
             switch (action) {
                 case 'start':
                     startTimer();
@@ -128,12 +132,21 @@
             document.getElementById('timer-area').textContent = area;
         });
 
+        // Attach event listeners to buttons using the API
+        document.getElementById('start-btn').addEventListener('click', () => {
+            window.timerOverlayAPI.startTimer();
+            startTimer(); // Direct call to ensure local UI updates
+        });
 
+        document.getElementById('pause-btn').addEventListener('click', () => {
+            window.timerOverlayAPI.pauseTimer();
+            pauseTimer(); // Direct call to ensure local UI updates
+        });
 
-        // Attach event listeners
-        document.getElementById('start-btn').addEventListener('click', startTimer);
-        document.getElementById('pause-btn').addEventListener('click', pauseTimer);
-        document.getElementById('reset-btn').addEventListener('click', resetTimer);
+        document.getElementById('reset-btn').addEventListener('click', () => {
+            window.timerOverlayAPI.resetTimer();
+            resetTimer(); // Direct call to ensure local UI updates
+        });
 
         // Disable pause button initially
         document.getElementById('pause-btn').disabled = true;

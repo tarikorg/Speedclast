@@ -9,6 +9,11 @@ contextBridge.exposeInMainWorld('timerOverlayAPI', {
         ipcRenderer.on('timer-action', (_event, action) => callback(action));
     },
 
+    //direct access to to timerActions
+    startTimer: () => ipcRenderer.send('timer-action', 'start'),
+    pauseTimer: () => ipcRenderer.send('timer-action', 'pause'),
+    resetTImer: () => ipcRenderer.send('timer-action', 'reset'),
+
     startDrag: (overlayType, mousePos) => {
         ipcRenderer.send('overlay-mouse-down', overlayType, mousePos);
     },

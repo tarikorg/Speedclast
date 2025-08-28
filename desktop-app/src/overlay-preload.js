@@ -1,6 +1,5 @@
 const { contextBridge, ipcRenderer } = require('electron');
 
-
 contextBridge.exposeInMainWorld('overlayAPI', {
     onAreaChanged: (callback) => {
         ipcRenderer.on('area-changed', (_event, areaName, mapInfo) => callback(areaName, mapInfo));
@@ -17,7 +16,9 @@ contextBridge.exposeInMainWorld('overlayAPI', {
     requestCurrentArea: () => {
         ipcRenderer.send('request-current-area');
     },
+
     openImageInOverlay: (imagePath) => {
-        ipcRenderer.send('open-image-in-overlay', imagePath)
+        console.log("Sending request to open image:", imagePath);
+        ipcRenderer.send('open-image-in-overlay', imagePath);
     }
 });

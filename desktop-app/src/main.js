@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const mapData = require('./services/mapDataService.js');
 const Store = require('electron-store');
+const { log, error } = require('./debug')
 
 const store = new Store({
     name: 'speedclast-overlay-settings',
@@ -148,6 +149,26 @@ function createTimerOverlay() {
     }
 }
 
+
+function showImageInOverlay(imagePath) {
+    if (imageOverlay && !imageOverlay.isDestroyed()) {
+        if (!imageOverlay.isVisible()) {
+            imageOverlay.show();
+            //update settings
+            const settings = store.get('imageOverlay');
+            settings.visible = true;
+            store.set('imageOverlay', settings);
+
+            //notify the main window of the change
+            if (mainWindow && !mainWindow.isDestroyed()) {
+                mainWindow.webContents.send('overlay-visibility-changed', 'image', true);
+            }
+        }
+        imageOverlay.webContents.send('set-image', imagePath);
+
+    }
+}
+
 app.whenReady().then(() => {
     protocol.registerFileProtocol('app', (request, callback) => {
         const url = request.url.substring(6);
@@ -236,7 +257,9 @@ app.on('window-all-closed', () => {
 
 //==================
 function startLogWatcher() {
-    // Ensure log file exists
+    console.log(`Watching for changes in: ${logFilePath}`);
+
+    // Ensure the log file and directory exist before watching
     const logDir = path.dirname(logFilePath);
     if (!fs.existsSync(logDir)) {
         fs.mkdirSync(logDir, { recursive: true });
@@ -246,30 +269,48 @@ function startLogWatcher() {
     }
 
     let lastSize = fs.statSync(logFilePath).size;
+    console.log(`Initial log file size: ${lastSize} bytes`);
 
-    fs.watch(logFilePath, (eventType) => {
+    // Create a more robust file watcher
+    const watcher = fs.watch(logFilePath, { persistent: true }, (eventType) => {
         if (eventType === 'change') {
-            fs.stat(logFilePath, (err, stats) => {
-                if (err) {
-                    console.error('Error stating file:', err);
-                    return;
-                }
+            try {
+                const stats = fs.statSync(logFilePath);
 
                 if (stats.size > lastSize) {
+                    console.log(`Log file changed: ${lastSize} -> ${stats.size} bytes`);
+
                     const stream = fs.createReadStream(logFilePath, {
                         start: lastSize,
                         end: stats.size,
                     });
 
+                    let newContent = '';
+
                     stream.on('data', (chunk) => {
-                        const lines = chunk.toString('utf-8').split('\n').filter(line => line.trim() !== '');
+                        newContent += chunk.toString('utf-8');
+                    });
+
+                    stream.on('end', () => {
+                        const lines = newContent.split('\n').filter(line => line.trim() !== '');
 
                         for (const line of lines) {
                             const match = line.match(/: You have entered (.+)\./);
                             if (match && match[1]) {
                                 const areaName = match[1];
-                                const mapInfo = mapData[areaName] || {};
+                                console.log(`Area detected: ${areaName}`);
+                                log(`Area detected: ${areaName}`);
 
+                                // Get map data if available
+                                const mapInfo = mapData[areaName] || {
+                                    guide: "No specific guide available for this area.",
+                                    rewards: null,
+                                    pointsOfInterest: null,
+                                    proTip: null,
+                                    layoutImage: ["default.jpg"]
+                                };
+
+                                // Update current area info
                                 currentArea = areaName;
                                 currentMapInfo = mapInfo;
 
@@ -282,25 +323,47 @@ function startLogWatcher() {
                                     areaOverlay.webContents.send('area-changed', areaName, mapInfo);
                                 }
 
-                                if (imageOverlay && !imageOverlay.isDestroyed()) {
-                                    imageOverlay.webContents.send('area-changed', areaName, mapInfo);
-                                }
-
                                 // Only send the area name to the timer
                                 if (timerOverlay && !timerOverlay.isDestroyed()) {
                                     timerOverlay.webContents.send('area-changed', areaName);
                                 }
                             }
                         }
+
+                        lastSize = stats.size;
                     });
 
-                    lastSize = stats.size;
+                    stream.on('error', (err) => {
+                        console.error('Error reading from log file:', err);
+                    });
+
                 } else if (stats.size < lastSize) {
+                    // File was truncated or reset
+                    console.log(`Log file was reset: ${lastSize} -> ${stats.size} bytes`);
                     lastSize = stats.size;
                 }
-            });
+            } catch (err) {
+                console.error('Error handling file change:', err);
+            }
         }
     });
+
+    // Handle watcher errors
+    watcher.on('error', (error) => {
+        console.error('File watcher error:', error);
+        // Try to restart the watcher after a brief delay
+        setTimeout(() => {
+            try {
+                watcher.close();
+                startLogWatcher();
+            } catch (e) {
+                console.error('Failed to restart watcher:', e);
+            }
+        }, 5000);
+    });
+
+    // Log that we've started watching
+    console.log('File watcher started successfully');
 }
 
 // Handle IPC messages for overlay controls
@@ -453,15 +516,5 @@ ipcMain.on('request-current-area', (event) => {
 
 // Handle image overlay requests
 ipcMain.on('open-image-in-overlay', (event, imagePath) => {
-    if (imageOverlay && !imageOverlay.isDestroyed()) {
-        imageOverlay.webContents.send('set-image', imagePath);
-
-        // Make sure it's visible
-        if (!imageOverlay.isVisible()) {
-            imageOverlay.show();
-            const settings = store.get('imageOverlay');
-            settings.visible = true;
-            store.set('imageOverlay', settings);
-        }
-    }
+    showImageInOverlay(imagePath)
 });
